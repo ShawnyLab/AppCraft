@@ -41,7 +41,7 @@ public struct CoreListView: View {
                         case .image:
                             onSelect(ACImage(url: "url"))
                         case .space:
-                            onSelect(ACBox())
+                            onSelect(ACBox(width: -1, height: 1))
                         }
                     } label: {
                         Text(option.name)

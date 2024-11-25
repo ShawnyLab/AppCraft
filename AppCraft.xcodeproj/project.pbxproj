@@ -14,11 +14,15 @@
 		0CA9B201030D94BB0090B915 /* CraftCoreUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F02AEF95F9F125667968D7 /* CraftCoreUI.framework */; };
 		0FEAD8D3C895CE050133E996 /* ACBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B64A25999FA8A821CE4991 /* ACBox.swift */; };
 		183A434A369EE8B474E404E3 /* CompListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808F1FAF4B8BF4EC9378C4F6 /* CompListView.swift */; };
-		192E53B72CF1B9F100AA44E2 /* EditCompView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E53B62CF1B9F100AA44E2 /* EditCompView.swift */; };
-		192E53BA2CF3201800AA44E2 /* CoreAddingPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E53B92CF3201800AA44E2 /* CoreAddingPosition.swift */; };
+		192E53C32CF4429F00AA44E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 192E53C12CF4429F00AA44E2 /* Assets.xcassets */; };
+		192E53C42CF4429F00AA44E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 192E53BF2CF4429F00AA44E2 /* Preview Assets.xcassets */; };
+		192E53C62CF442AC00AA44E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 192E53C52CF442AC00AA44E2 /* GoogleService-Info.plist */; };
+		192E53C82CF442C500AA44E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E53C72CF442C500AA44E2 /* AppDelegate.swift */; };
+		192E53CB2CF4434400AA44E2 /* CoreAddingPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E53C92CF4434400AA44E2 /* CoreAddingPosition.swift */; };
 		1FA147087B881706C496661D /* Comp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FC402D789A8CC8F07EA603 /* Comp.swift */; };
 		2D98972239331AAC8FAEC70E /* CompFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72D7A1517FC69F45955CCC7 /* CompFeature.swift */; };
 		329177654BA04A72FD77B2F0 /* ACCoreTypeIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA28F694C3F803E54A23B686 /* ACCoreTypeIdentifier.swift */; };
+		3371304077C340EB36B340EF /* CreateCompFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2496D09E49E5F5E95174B223 /* CreateCompFeature.swift */; };
 		393241D4BC18CD78A1CE3BCD /* ACRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D147A0518851B218F2BA2812 /* ACRow.swift */; };
 		3B10CEBECC0297F4ABECDBBD /* ACCoreTypeWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640379D9891F56785E0E168F /* ACCoreTypeWrapper.swift */; };
 		3B5D9C2A892D372682262548 /* BoardFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC83D551317E2A1F8EF74C84 /* BoardFeature.swift */; };
@@ -35,6 +39,7 @@
 		5EC0DC3A1A0A2FBDA1A64D75 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = E4E0FF3B9BD88AD4F5535D85 /* ComposableArchitecture */; };
 		601B30AADBCD7E76FE6149F7 /* SectorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DCEEE7B92B01377CEBBB25 /* SectorType.swift */; };
 		603E7D165F6960C98BD5299D /* CompView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD948CD7953E1826701810C /* CompView.swift */; };
+		6895FD85E6073912618BE29D /* EditCompView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4110C741391785E35163696 /* EditCompView.swift */; };
 		68D18165CB6362DF60CEF6CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4B874141796BF452B66027 /* Assets.xcassets */; };
 		6A62741144F793EB6B451BCD /* CompUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95B61F8AD5C4EB2E7FA07951 /* CompUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6E05EE9E5AD4C95DD3336811 /* AppCraftCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1B299CEC0AB0F0F532AF59 /* AppCraftCore.framework */; };
@@ -311,9 +316,13 @@
 		0E7A939A668C668A1D262F07 /* CompKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "CompKit-Info.plist"; sourceTree = "<group>"; };
 		1694F793A4DA5C21597DE8B8 /* SelectCompView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCompView.swift; sourceTree = "<group>"; };
 		1808157551432951E1AD6415 /* AppCraftCore-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "AppCraftCore-Info.plist"; sourceTree = "<group>"; };
-		192E53B62CF1B9F100AA44E2 /* EditCompView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCompView.swift; sourceTree = "<group>"; };
-		192E53B92CF3201800AA44E2 /* CoreAddingPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAddingPosition.swift; sourceTree = "<group>"; };
+		192E53BF2CF4429F00AA44E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		192E53C12CF4429F00AA44E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		192E53C52CF442AC00AA44E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		192E53C72CF442C500AA44E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		192E53C92CF4434400AA44E2 /* CoreAddingPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAddingPosition.swift; sourceTree = "<group>"; };
 		245193B0FCD0F4732DF9ECD7 /* NetworkServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceType.swift; sourceTree = "<group>"; };
+		2496D09E49E5F5E95174B223 /* CreateCompFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCompFeature.swift; sourceTree = "<group>"; };
 		254998F266051642E3180723 /* SectorOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectorOptionView.swift; sourceTree = "<group>"; };
 		26FEB463E0870E27D30D9D5D /* CoreOptionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreOptionType.swift; sourceTree = "<group>"; };
 		29F02AEF95F9F125667968D7 /* CraftCoreUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CraftCoreUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -367,6 +376,7 @@
 		E0EC0E5349458ADBCB241666 /* CraftCoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraftCoreView.swift; sourceTree = "<group>"; };
 		E145285366502C3D11C7CEC3 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		E2E9052A229952F0D954DB06 /* TuistAssets+CraftCoreUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+CraftCoreUI.swift"; sourceTree = "<group>"; };
+		E4110C741391785E35163696 /* EditCompView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCompView.swift; sourceTree = "<group>"; };
 		E891538F2C7786D649EB4CB7 /* ACColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACColumn.swift; sourceTree = "<group>"; };
 		E9E4AD5A45B718210507D3F6 /* TuistBundle+CompUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+CompUI.swift"; sourceTree = "<group>"; };
 		E9F8EE5FBF69F70B844AA217 /* AppCraftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "AppCraftUI-Info.plist"; sourceTree = "<group>"; };
@@ -515,10 +525,28 @@
 			path = CompUI;
 			sourceTree = "<group>";
 		};
-		192E53B82CF3200500AA44E2 /* Enum */ = {
+		192E53C02CF4429F00AA44E2 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				192E53B92CF3201800AA44E2 /* CoreAddingPosition.swift */,
+				192E53BF2CF4429F00AA44E2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		192E53C22CF4429F00AA44E2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				192E53C52CF442AC00AA44E2 /* GoogleService-Info.plist */,
+				192E53C02CF4429F00AA44E2 /* Preview Content */,
+				192E53C12CF4429F00AA44E2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		192E53CA2CF4434400AA44E2 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				192E53C92CF4434400AA44E2 /* CoreAddingPosition.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -579,6 +607,7 @@
 			isa = PBXGroup;
 			children = (
 				BBF3A5A50A2B2961E6B79EF1 /* AppCraftApp.swift */,
+				192E53C72CF442C500AA44E2 /* AppDelegate.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -595,7 +624,9 @@
 		5BEFDC02460F35A5E5A9DC0E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				192E53CA2CF4434400AA44E2 /* Enum */,
 				C72D7A1517FC69F45955CCC7 /* CompFeature.swift */,
+				2496D09E49E5F5E95174B223 /* CreateCompFeature.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -659,7 +690,6 @@
 		8A1C43DB1ABD8EF873A4357C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				192E53B82CF3200500AA44E2 /* Enum */,
 				DF3EF7E2027FC6563112917A /* Comp */,
 			);
 			path = Sources;
@@ -811,7 +841,7 @@
 				808F1FAF4B8BF4EC9378C4F6 /* CompListView.swift */,
 				9AD948CD7953E1826701810C /* CompView.swift */,
 				C053630D91E7ACA1DF115E69 /* CreateCompView.swift */,
-				192E53B62CF1B9F100AA44E2 /* EditCompView.swift */,
+				E4110C741391785E35163696 /* EditCompView.swift */,
 			);
 			path = Comp;
 			sourceTree = "<group>";
@@ -830,6 +860,7 @@
 			isa = PBXGroup;
 			children = (
 				42267A76E053D4E0E1AAF80D /* Sources */,
+				192E53C22CF4429F00AA44E2 /* Resources */,
 			);
 			path = AppCraft;
 			sourceTree = "<group>";
@@ -1100,6 +1131,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				192E53C32CF4429F00AA44E2 /* Assets.xcassets in Resources */,
+				192E53C62CF442AC00AA44E2 /* GoogleService-Info.plist in Resources */,
+				192E53C42CF4429F00AA44E2 /* Preview Assets.xcassets in Resources */,
 				D41767C80912CDC95618DB3E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1163,8 +1197,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F53B294E31F372BFCD016A55 /* TuistAssets+CompKit.swift in Sources */,
+				192E53CB2CF4434400AA44E2 /* CoreAddingPosition.swift in Sources */,
 				91DB93F5B405821EE708DB59 /* TuistBundle+CompKit.swift in Sources */,
 				2D98972239331AAC8FAEC70E /* CompFeature.swift in Sources */,
+				3371304077C340EB36B340EF /* CreateCompFeature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1205,12 +1241,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9BEE0E5079F286929C24686 /* TuistAssets+CompUI.swift in Sources */,
-				192E53B72CF1B9F100AA44E2 /* EditCompView.swift in Sources */,
 				487F84FD16808B966D7CB7B8 /* TuistBundle+CompUI.swift in Sources */,
 				183A434A369EE8B474E404E3 /* CompListView.swift in Sources */,
-				192E53BA2CF3201800AA44E2 /* CoreAddingPosition.swift in Sources */,
 				603E7D165F6960C98BD5299D /* CompView.swift in Sources */,
 				46BC3CA175B58E15611047F0 /* CreateCompView.swift in Sources */,
+				6895FD85E6073912618BE29D /* EditCompView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1256,6 +1291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				192E53C82CF442C500AA44E2 /* AppDelegate.swift in Sources */,
 				9C94AF53D743384713E2830E /* TuistAssets+AppCraft.swift in Sources */,
 				91DCD8FDAA4F62C68B834FB0 /* TuistBundle+AppCraft.swift in Sources */,
 				C0FC9C28B3001136329D94A0 /* AppCraftApp.swift in Sources */,
@@ -1528,6 +1564,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = JRXGXW25BG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Derived/InfoPlists/AppCraft-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -1535,7 +1572,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.appcraft;
+				PRODUCT_BUNDLE_IDENTIFIER = com.indecode.appcraft;
 				PRODUCT_NAME = AppCraft;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -1553,6 +1590,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = JRXGXW25BG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Derived/InfoPlists/AppCraft-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -1560,7 +1598,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.appcraft;
+				PRODUCT_BUNDLE_IDENTIFIER = com.indecode.appcraft;
 				PRODUCT_NAME = AppCraft;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;

@@ -8,11 +8,13 @@
 import SwiftUI
 import CraftCoreUI
 import AppCraftCore
+import CompKit
 
 struct CreateCompView: View {
     @State private var showCoreOptions = false
     @State private var cores: [any ACCoreType] = [ACColumn(cores: [])]
     @State private var coreAddingPosition: CoreAddingPosition? = nil
+    @State private var selectedRowId: UUID? = nil
     
     var body: some View {
         VStack {
@@ -44,8 +46,9 @@ struct CreateCompView: View {
                 .foregroundStyle(ACColor.gray1)
             
             EditCompView(cores: cores,
-                         showCoreOptions: $showCoreOptions,
-                         coreAddingPosition: $coreAddingPosition)
+                        showCoreOptions: $showCoreOptions,
+                        coreAddingPosition: $coreAddingPosition,
+                        selectedRowId: $selectedRowId)
                 .padding(50)
                 .background {
                     ACColor.darkGray
@@ -78,18 +81,20 @@ struct CreateCompView: View {
                               var column = cores[0] as? ACColumn else { return }
                         
                         switch coreAddingPosition {
-                        case .left:
-                            guard let rowIndex = UserDefaults.standard.value(forKey: "CurrentRowIndex") as? Int,
+                        case .left, .right:
+                            guard let selectedRowId = selectedRowId,
+                                  let rowIndex = column.cores.firstIndex(where: { $0.id == selectedRowId }),
                                   var row = column.cores[rowIndex] as? ACRow else { return }
-                            row.cores.insert(core, at: 0)
+                            
+                            if coreAddingPosition == .left {
+                                row.cores.insert(core, at: 0)
+                            } else {
+                                row.cores.append(core)
+                            }
+                            
                             column.cores[rowIndex] = row
                             cores[0] = column
-                        case .right:
-                            guard let rowIndex = UserDefaults.standard.value(forKey: "CurrentRowIndex") as? Int,
-                                  var row = column.cores[rowIndex] as? ACRow else { return }
-                            row.cores.append(core)
-                            column.cores[rowIndex] = row
-                            cores[0] = column
+                            
                         case .down:
                             column.cores.append(ACRow(cores: [core]))
                             cores[0] = column
@@ -97,8 +102,7 @@ struct CreateCompView: View {
                         
                         showCoreOptions = false
                         self.coreAddingPosition = nil
-                        // Clear the stored row index
-                        UserDefaults.standard.removeObject(forKey: "CurrentRowIndex")
+                        self.selectedRowId = nil
                     })
                     .clipShape(RoundedRectangle(cornerRadius: 12))
                     .padding(50)

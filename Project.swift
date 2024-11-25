@@ -41,11 +41,14 @@ let project = Project(
             name: "AppCraft",
             platform: .iOS,
             product: .app,
-            bundleId: "com.appcraft",
+            bundleId: "com.indecode.appcraft",
             deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
             sources: ["Targets/AppCraft/Sources/**"],
-            resources: ["Targets/CraftCoreUI/Resources/**"],
+            resources: [
+                "Targets/CraftCoreUI/Resources/**",
+                "Targets/AppCraft/Resources/GoogleService-Info.plist"
+            ],
             dependencies: [
                 .target(name: "AppCraftUI"),
                 .target(name: "AppCraftDatabase")
@@ -158,6 +161,5 @@ let project = Project(
                 .target(name: "AppCraftCore")
             ]
         ),
-        
     ]
 )
