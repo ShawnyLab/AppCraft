@@ -46,120 +46,202 @@ let project = Project(
             infoPlist: .default,
             sources: ["Targets/AppCraft/Sources/**"],
             resources: [
-                "Targets/CraftCoreUI/Resources/**",
+                "Targets/CoreUI/Resources/**",
                 "Targets/AppCraft/Resources/GoogleService-Info.plist"
             ],
             dependencies: [
-                .target(name: "AppCraftUI"),
-                .target(name: "AppCraftDatabase")
+                .target(name: "CoreDatabase"),
+                .target(name: "Feature"),
+                .target(name: "Domain")
             ]
         ),
         Target(
-            name: "AppCraftUI",
+            name: "Domain",
             platform: .iOS,
             product: .framework,
-            bundleId: "com.appcraft.ui",
+            bundleId: "com.appcraft.domain",
             deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
-            sources: ["Targets/AppCraftUI/Sources/**"],
+            sources: ["Targets/Domain/Sources/**"],
             dependencies: [
-                .target(name: "BoardUI"),
-                .target(name: "CraftCoreUI"),
-                .target(name: "CompUI")
+                .target(name: "DomainBoard"),
+                .target(name: "DomainComp"),
+                .target(name: "DomainAuth")
             ]
         ),
         Target(
-            name: "AppCraftCore",
+            name: "DomainBoard",
             platform: .iOS,
             product: .framework,
-            bundleId: "com.appcraft.core",
+            bundleId: "com.appcraft.domainboard",
             deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
-            sources: ["Targets/AppCraftCore/Sources/**"]
-        ),
-        Target(
-            name: "AppCraftDatabase",
-            platform: .iOS,
-            product: .framework,
-            bundleId: "com.appcraft.database",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
-            infoPlist: .default,
-            sources: ["Targets/AppCraftDatabase/Sources/**"],
+            sources: ["Targets/DomainBoard/Sources/**"],
             dependencies: [
-                .target(name: "AppCraftCore"),
-                .package(product: "FirebaseCore"),
-                .package(product: "FirebaseFirestore")
+                .target(name: "CoreDatabase"),
+                .target(name: "Shared")
             ]
         ),
         Target(
-            name: "BoardKit",
+            name: "DomainComp",
             platform: .iOS,
             product: .framework,
-            bundleId: "com.appcraft.boardkit",
+            bundleId: "com.appcraft.domaincomp",
             deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
-            sources: ["Targets/BoardKit/Sources/**"],
+            sources: ["Targets/DomainComp/Sources/**"],
             dependencies: [
+                .target(name: "CoreDatabase"),
+                .target(name: "Shared"),
+//                .target(name: "DomainAuthInterface")
+                .target(name: "DomainAuth")
+            ]
+        ),
+        Target(
+            name: "DomainAuth",
+            platform: .iOS,
+            product: .framework,
+            bundleId: "com.appcraft.domainauth",
+            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
+            infoPlist: .default,
+            sources: ["Targets/DomainAuth/Sources/**"],
+            dependencies: [
+                .target(name: "CoreAuth"),
+                .target(name: "Shared"),
+//                .target(name: "DomainAuthInterface"),
+//                .package(product: "ComposableArchitecture"),
+            ]
+        ),
+//        Target(
+//            name: "DomainAuthInterface",
+//            platform: .iOS,
+//            product: .framework,
+//            bundleId: "com.appcraft.domainauthinterface",
+//            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
+//            infoPlist: .default,
+//            sources: ["Targets/DomainAuthInterface/Sources/**"],
+//            dependencies: [
+//                .target(name: "Shared"),
+//            ]
+//        ),
+        Target(
+            name: "Feature",
+            platform: .iOS,
+            product: .framework,
+            bundleId: "com.appcraft.feature",
+            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
+            infoPlist: .default,
+            sources: ["Targets/Feature/Sources/**"],
+            dependencies: [
+                .target(name: "FeatureComp"),
+                .target(name: "FeatureBoard"),
+                .target(name: "FeatureAuth"),
+            ]
+        ),
+        Target(
+            name: "FeatureComp",
+            platform: .iOS,
+            product: .framework,
+            bundleId: "com.appcraft.featurecomp",
+            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
+            infoPlist: .default,
+            sources: ["Targets/FeatureComp/Sources/**"],
+            dependencies: [
+                .target(name: "DomainComp"),
+                .target(name: "CoreUI"),
                 .package(product: "ComposableArchitecture"),
-                .target(name: "AppCraftCore")
             ]
         ),
         Target(
-            name: "BoardUI",
+            name: "FeatureAuthExample",
             platform: .iOS,
-            product: .framework,
-            bundleId: "com.appcraft.boardui",
+            product: .app,
+            bundleId: "com.appcraft.featureauthexample",
             deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
-            sources: ["Targets/BoardUI/Sources/**"],
+            sources: ["Targets/FeatureAuthExample/Sources/**"],
             dependencies: [
-                .target(name: "AppCraftCore"),
-                .target(name: "CraftCoreUI"),
-                .target(name: "BoardKit"),
-                .target(name: "CompUI")
+                .target(name: "FeatureAuth")
             ]
         ),
         Target(
-            name: "CraftCoreUI",
+            name: "FeatureAuth",
             platform: .iOS,
             product: .framework,
-            bundleId: "com.appcraft.craftcoreui",
+            bundleId: "com.appcraft.featureauth",
             deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
-            sources: ["Targets/CraftCoreUI/Sources/**"],
-            resources: ["Targets/CraftCoreUI/Resources/**"],
+            sources: ["Targets/FeatureAuth/Sources/**"],
             dependencies: [
-                .target(name: "AppCraftCore")
-            ]
-        ),
-        Target(
-            name: "CompUI",
-            platform: .iOS,
-            product: .framework,
-            bundleId: "com.appcraft.compui",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
-            infoPlist: .default,
-            sources: ["Targets/CompUI/Sources/**"],
-            resources: ["Targets/CraftCoreUI/Resources/**"],
-            dependencies: [
-                .target(name: "AppCraftCore"),
-                .target(name: "CraftCoreUI"),
-                .target(name: "CompKit")
-            ]
-        ),
-        Target(
-            name: "CompKit",
-            platform: .iOS,
-            product: .framework,
-            bundleId: "com.appcraft.compkit",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
-            infoPlist: .default,
-            sources: ["Targets/CompKit/Sources/**"],
-            resources: ["Targets/CraftCoreUI/Resources/**"],
-            dependencies: [
+                .target(name: "DomainAuth"),
+                .target(name: "CoreUI"),
                 .package(product: "ComposableArchitecture"),
-                .target(name: "AppCraftCore")
+
             ]
+        ),
+        Target(
+            name: "FeatureBoard",
+            platform: .iOS,
+            product: .framework,
+            bundleId: "com.appcraft.featureboard",
+            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
+            infoPlist: .default,
+            sources: ["Targets/FeatureBoard/Sources/**"],
+            dependencies: [
+                .target(name: "DomainBoard"),
+                .target(name: "FeatureComp"),
+                .target(name: "CoreUI"),
+                .package(product: "ComposableArchitecture"),
+            ]
+        ),
+        Target(
+            name: "CoreDatabase",
+            platform: .iOS,
+            product: .framework,
+            bundleId: "com.appcraft.coredatabase",
+            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
+            infoPlist: .default,
+            sources: ["Targets/CoreDatabase/Sources/**"],
+            dependencies: [
+                .target(name: "Shared"),
+                .package(product: "FirebaseFirestore"),
+            ]
+        ),
+        Target(
+            name: "CoreUI",
+            platform: .iOS,
+            product: .framework,
+            bundleId: "com.appcraft.coreui",
+            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
+            infoPlist: .default,
+            sources: ["Targets/CoreUI/Sources/**"],
+            resources: ["Targets/CoreUI/Resources/**"],
+            dependencies: [
+                .target(name: "Shared"),
+            ]
+        ),
+        Target(
+            name: "CoreAuth",
+            platform: .iOS,
+            product: .framework,
+            bundleId: "com.appcraft.coreauth",
+            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
+            infoPlist: .default,
+            sources: ["Targets/CoreAuth/Sources/**"],
+            dependencies: [
+                .target(name: "Shared"),
+                .target(name: "CoreDatabase"),
+                .package(product: "FirebaseAuth")
+            ]
+        ),
+        Target(
+            name: "Shared",
+            platform: .iOS,
+            product: .framework,
+            bundleId: "com.appcraft.shared",
+            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
+            infoPlist: .default,
+            sources: ["Targets/Shared/Sources/**"]
         ),
     ]
 )

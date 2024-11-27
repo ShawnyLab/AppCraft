@@ -28,9 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0CDA6B198BB835F590CA645C"
-               BuildableName = "AppCraftCore.framework"
-               BlueprintName = "AppCraftCore"
+               BlueprintIdentifier = "ED845508AFA96505A7E12461"
+               BuildableName = "CoreAuth.framework"
+               BlueprintName = "CoreAuth"
                ReferencedContainer = "container:AppCraft.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,9 +42,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "40DFBEBBD6828A06A97999EB"
-               BuildableName = "AppCraftDatabase.framework"
-               BlueprintName = "AppCraftDatabase"
+               BlueprintIdentifier = "FB6D0738A3B72624B669F735"
+               BuildableName = "CoreDatabase.framework"
+               BlueprintName = "CoreDatabase"
                ReferencedContainer = "container:AppCraft.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -56,9 +56,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AF4CE54047611B893A5A8572"
-               BuildableName = "AppCraftUI.framework"
-               BlueprintName = "AppCraftUI"
+               BlueprintIdentifier = "A95FCAC40C2DA3AA0842074E"
+               BuildableName = "CoreUI.framework"
+               BlueprintName = "CoreUI"
                ReferencedContainer = "container:AppCraft.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -70,9 +70,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1636A73500976D4BACB476AA"
-               BuildableName = "BoardKit.framework"
-               BlueprintName = "BoardKit"
+               BlueprintIdentifier = "2B53054DD3C9922E563B576C"
+               BuildableName = "Domain.framework"
+               BlueprintName = "Domain"
                ReferencedContainer = "container:AppCraft.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -84,9 +84,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DAD4780D3DB129CCF0610169"
-               BuildableName = "BoardUI.framework"
-               BlueprintName = "BoardUI"
+               BlueprintIdentifier = "989E240500472C0595F63BB7"
+               BuildableName = "DomainAuth.framework"
+               BlueprintName = "DomainAuth"
                ReferencedContainer = "container:AppCraft.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -98,9 +98,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "26FC816EE23E78E7F3DDC798"
-               BuildableName = "CompKit.framework"
-               BlueprintName = "CompKit"
+               BlueprintIdentifier = "74C3B07DC1F41635866E3E03"
+               BuildableName = "DomainBoard.framework"
+               BlueprintName = "DomainBoard"
                ReferencedContainer = "container:AppCraft.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -112,9 +112,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C9F871330B1BF278D704A247"
-               BuildableName = "CompUI.framework"
-               BlueprintName = "CompUI"
+               BlueprintIdentifier = "D1760617507E1159CEDFCB2D"
+               BuildableName = "DomainComp.framework"
+               BlueprintName = "DomainComp"
                ReferencedContainer = "container:AppCraft.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -126,9 +126,79 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5D7580CD027D5E94B6FC18A1"
-               BuildableName = "CraftCoreUI.framework"
-               BlueprintName = "CraftCoreUI"
+               BlueprintIdentifier = "1BF7BD2827EF96FC3CA24A4A"
+               BuildableName = "Feature.framework"
+               BlueprintName = "Feature"
+               ReferencedContainer = "container:AppCraft.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "55D9D6BB4F3D334EAE6C36C1"
+               BuildableName = "FeatureAuth.framework"
+               BlueprintName = "FeatureAuth"
+               ReferencedContainer = "container:AppCraft.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1B0430133EC7DA05573D8FC9"
+               BuildableName = "FeatureAuthExample.app"
+               BlueprintName = "FeatureAuthExample"
+               ReferencedContainer = "container:AppCraft.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DA7FD873C6B213EAB21110BE"
+               BuildableName = "FeatureBoard.framework"
+               BlueprintName = "FeatureBoard"
+               ReferencedContainer = "container:AppCraft.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3EE489E56837A5D5A225401B"
+               BuildableName = "FeatureComp.framework"
+               BlueprintName = "FeatureComp"
+               ReferencedContainer = "container:AppCraft.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F91AE291BBB9F8243BF9C8D6"
+               BuildableName = "Shared.framework"
+               BlueprintName = "Shared"
                ReferencedContainer = "container:AppCraft.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
