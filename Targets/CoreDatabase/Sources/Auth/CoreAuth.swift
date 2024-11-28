@@ -6,7 +6,6 @@
 //
 
 import FirebaseAuth
-import CoreDatabase
 import Shared
 
 public actor CoreAuth: AuthService {

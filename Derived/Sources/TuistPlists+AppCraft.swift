@@ -25,6 +25,22 @@ public enum GoogleServiceInfo {
     public static let projectId: String = "appcraft-5a90a"
     public static let storageBucket: String = "appcraft-5a90a.firebasestorage.app"
 }
+public enum Info {
+    public static let cfBundleDevelopmentRegion: String = "$(DEVELOPMENT_LANGUAGE)"
+    public static let cfBundleExecutable: String = "$(EXECUTABLE_NAME)"
+    public static let cfBundleIdentifier: String = "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    public static let cfBundleInfoDictionaryVersion: String = "6.0"
+    public static let cfBundleName: String = "$(PRODUCT_NAME)"
+    public static let cfBundlePackageType: String = "APPL"
+    public static let cfBundleShortVersionString: String = "1.0"
+    public static let cfBundleVersion: String = "1"
+    public static let lsRequiresIPhoneOS: Bool = true
+    public static let uiApplicationSceneManifest: [String: Any] = ["UIApplicationSupportsMultipleScenes": false, "UISceneConfigurations": [:]]
+    public static let uiLaunchScreen: [String: Any] = ["UIImageName": ""]
+    public static let uiRequiredDeviceCapabilities: [String] = ["armv7"]
+    public static let uiSupportedInterfaceOrientations: [String] = ["UIInterfaceOrientationPortrait", "UIInterfaceOrientationLandscapeLeft", "UIInterfaceOrientationLandscapeRight"]
+    public static let uiSupportedInterfaceOrientationsIpad: [String] = ["UIInterfaceOrientationPortrait", "UIInterfaceOrientationPortraitUpsideDown", "UIInterfaceOrientationLandscapeLeft", "UIInterfaceOrientationLandscapeRight"]
+}
 // swiftlint:enable identifier_name line_length number_separator type_body_length
 // swiftlint:enable all
 // swiftformat:enable all

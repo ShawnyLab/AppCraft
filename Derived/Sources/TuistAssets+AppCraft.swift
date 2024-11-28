@@ -20,6 +20,7 @@
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 public enum AppCraftAsset {
+  public static let googleSignin = AppCraftImages(name: "google_signin")
   public static let blue = AppCraftColors(name: "Blue")
   public static let darkGray = AppCraftColors(name: "DarkGray")
   public static let gray1 = AppCraftColors(name: "Gray1")
@@ -47,6 +48,7 @@ public enum AppCraftAsset {
   public static let icTextWhite = AppCraftImages(name: "ic_text_white")
   public static let plusCircleBlack = AppCraftImages(name: "plus_circle_black")
   public static let plusCircleWhite = AppCraftImages(name: "plus_circle_white")
+  public static let guideLogo = AppCraftImages(name: "guide_logo")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 

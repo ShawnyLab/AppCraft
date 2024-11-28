@@ -2,26 +2,17 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 import MyPlugin
 
-/*
-                +-------------+
-                |             |
-                |     App     | Contains AppCraft App target and AppCraft unit-test target
-                |             |
-         +------+-------------+-------+
-         |         depends on         |
-         |                            |
- +----v-----+                   +-----v-----+
- |          |                   |           |
- |   Kit    |                   |     UI    |   Two independent frameworks to share code and start modularising your app
- |          |                   |           |
- +----------+                   +-----------+
-
- */
-
 // MARK: - Project
 
 // Local plugin loaded
 let localHelper = LocalHelper(name: "MyPlugin")
+
+
+let settings: Settings = .settings(
+    base: [
+        "DEVELOPMENT_TEAM": "JRXGXW25BG",
+    ]
+)
 
 // Creates our project using a helper function defined in ProjectDescriptionHelpers
 let project = Project(
@@ -43,17 +34,19 @@ let project = Project(
             product: .app,
             bundleId: "com.indecode.appcraft",
             deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
-            infoPlist: .default,
+            infoPlist: .file(path: "Targets/AppCraft/Resources/info.plist"),
             sources: ["Targets/AppCraft/Sources/**"],
             resources: [
                 "Targets/CoreUI/Resources/**",
-                "Targets/AppCraft/Resources/GoogleService-Info.plist"
+                "Targets/AppCraft/Resources/GoogleService-Info.plist",
+                "Targets/AppCraft/Resources/info.plist"
             ],
             dependencies: [
                 .target(name: "CoreDatabase"),
                 .target(name: "Feature"),
                 .target(name: "Domain")
-            ]
+            ],
+            settings: settings
         ),
         Target(
             name: "Domain",
@@ -106,7 +99,7 @@ let project = Project(
             infoPlist: .default,
             sources: ["Targets/DomainAuth/Sources/**"],
             dependencies: [
-                .target(name: "CoreAuth"),
+                .target(name: "CoreDatabase"),
                 .target(name: "Shared"),
 //                .target(name: "DomainAuthInterface"),
 //                .package(product: "ComposableArchitecture"),
@@ -158,11 +151,12 @@ let project = Project(
             product: .app,
             bundleId: "com.appcraft.featureauthexample",
             deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
-            infoPlist: .default,
+            infoPlist: .file(path: "Targets/FeatureAuthExample/Resources/Info.plist"),
             sources: ["Targets/FeatureAuthExample/Sources/**"],
             dependencies: [
                 .target(name: "FeatureAuth")
-            ]
+            ],
+            settings: settings
         ),
         Target(
             name: "FeatureAuth",
@@ -205,6 +199,7 @@ let project = Project(
             dependencies: [
                 .target(name: "Shared"),
                 .package(product: "FirebaseFirestore"),
+                .package(product: "FirebaseAuth"),
             ]
         ),
         Target(
@@ -218,20 +213,6 @@ let project = Project(
             resources: ["Targets/CoreUI/Resources/**"],
             dependencies: [
                 .target(name: "Shared"),
-            ]
-        ),
-        Target(
-            name: "CoreAuth",
-            platform: .iOS,
-            product: .framework,
-            bundleId: "com.appcraft.coreauth",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
-            infoPlist: .default,
-            sources: ["Targets/CoreAuth/Sources/**"],
-            dependencies: [
-                .target(name: "Shared"),
-                .target(name: "CoreDatabase"),
-                .package(product: "FirebaseAuth")
             ]
         ),
         Target(

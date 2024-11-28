@@ -6,10 +6,9 @@
 //
 
 import Foundation
-import CoreDatabase
 import Shared
 
-public actor MockAuthService: AuthService {
+public actor MockCoreAuthService: AuthService {
     var mockCurrentUser: UserSession?
     private let database: DatabaseService
     private var isSignedIn = false
@@ -17,7 +16,7 @@ public actor MockAuthService: AuthService {
     public init(database: DatabaseService = MockDatabaseService()) {
         self.database = database
     }
-    
+
     public var currentUser: UserSession? {
         get async throws {
             guard isSignedIn else { return nil }

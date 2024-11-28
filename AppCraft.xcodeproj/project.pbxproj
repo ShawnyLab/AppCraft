@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00B04B1FD58A3B9E4ED29C69 /* CoreAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C982D0C96E11E8808D37BA4 /* CoreAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		00F2ACEF073644D2209F9B8A /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 475137E8C16CCE1A6AA2247F /* Shared.framework */; };
 		027B218004B8616A4D3DDA85 /* CoreDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD7BEFBEF3271566A0BA296 /* CoreDatabase.framework */; };
 		0446BE56F346CABE8CE3E0A6 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 475137E8C16CCE1A6AA2247F /* Shared.framework */; };
@@ -18,14 +17,9 @@
 		0FBD0F2220185535B5924572 /* ACColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9FEB978F54C0B7517C028C /* ACColor.swift */; };
 		12C978FED8AEEA961C93CD2C /* DomainAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 745567F97EBA16911F313CA4 /* DomainAuth.framework */; };
 		1469F95C9DCD37EC9ED05581 /* CoreUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB16A4A966D5FEA0097DC5D7 /* CoreUI.framework */; };
-		192E54B42CF70E7400AA44E2 /* MockDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E54B32CF70E7400AA44E2 /* MockDatabaseService.swift */; };
-		192E54B62CF70EEE00AA44E2 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E54B52CF70EEE00AA44E2 /* AuthService.swift */; };
-		192E54B82CF70F2600AA44E2 /* MockAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E54B72CF70F2600AA44E2 /* MockAuthService.swift */; };
-		192E54BA2CF710B300AA44E2 /* TestDomainAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E54B92CF710B300AA44E2 /* TestDomainAuth.swift */; };
+		192B00FE2CF8E80D0077FA90 /* SignInFailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192B00FD2CF8E80D0077FA90 /* SignInFailedView.swift */; };
 		1B2BAF4F8F3AB9C4EE1A61D9 /* DividerOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83033A0095DF00B62DB2A1F3 /* DividerOptionView.swift */; };
-		1C8D942071EAD9BE86AD73E8 /* CoreAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E89227A1325B362928FD31 /* CoreAuth.swift */; };
 		20206745D9814CA166F1DDAB /* FeatureBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F659C68040BCD88D2D4EAA84 /* FeatureBoard.swift */; };
-		202FF16A7503F5F53713ACAA /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5015A4F9A65143FCC72A5F4 /* DatabaseService.swift */; };
 		2174EDB47F47223E45891BD0 /* CoreListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DECD00844E827A46A53DDB /* CoreListView.swift */; };
 		2542E878A18D66DA9B87759B /* ACCoreTypeIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78A236CB39EF0E8D51612C1 /* ACCoreTypeIdentifier.swift */; };
 		299EA0A778BC735A84AF8076 /* FeatureComp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4BEE38DFAF7D59027113AD /* FeatureComp.swift */; };
@@ -38,15 +32,17 @@
 		37A3BD970B09F54DBA7A8974 /* FeatureAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89457DC06C4FD9760622644C /* FeatureAuth.swift */; };
 		38062213F9E588E61F7A8141 /* DomainAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 745567F97EBA16911F313CA4 /* DomainAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3AB9056BE92888768CF44429 /* Shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 475137E8C16CCE1A6AA2247F /* Shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3B055136DC979DDB372BE0DF /* CoreDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD7BEFBEF3271566A0BA296 /* CoreDatabase.framework */; };
 		3BE356BB668B03768764FA75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE5CE2BAB5BDA72C29F19A7 /* Assets.xcassets */; };
+		3CD12E105A93C93EC2FD1C5A /* CoreDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7807A5955B231BF77BC944 /* CoreDatabase.swift */; };
 		3E64294C08A2F4E772B9DA0E /* CoreDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD7BEFBEF3271566A0BA296 /* CoreDatabase.framework */; };
 		41D78ECB0D57DAA137D6BD32 /* SelectCompView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA554CAF1C7AC7A23B78516 /* SelectCompView.swift */; };
+		42F385CE0B74985138B4341F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1EA2FE8D8FBDF4FB7719AC /* AuthService.swift */; };
 		449E97D17271047F142259F0 /* Feature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEAF8864ECBCA583BB2DDA0 /* Feature.framework */; };
 		45F083A22C5F99924886A587 /* EditCompView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32844CE05AD8229D63A5EF4 /* EditCompView.swift */; };
 		49413733A947D337A065331A /* TuistAssets+CoreUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E032589731F7CDCB9EA13D /* TuistAssets+CoreUI.swift */; };
 		49BAE403F352089BC6E4E01B /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A87F81D32D83CD2C04F924D7 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4E0D21CAA3D51E1DF262D44D /* CraftCoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D798FB04D6ED11E190A705E1 /* CraftCoreView.swift */; };
+		4EE1D4980E14931CACB229AD /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2066EA5BAF7A037758EEB1 /* DatabaseService.swift */; };
 		50CE4BD34880E9B9C06B7772 /* CoreDatabase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD7BEFBEF3271566A0BA296 /* CoreDatabase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		56DEFB30A7DFB8164F3344EC /* DomainComp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DE4F27E5B52F3DBEBFF9E8 /* DomainComp.framework */; };
 		58176B316431AD015493C9BC /* DomainComp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0DE4F27E5B52F3DBEBFF9E8 /* DomainComp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -58,11 +54,13 @@
 		635557BB12BB1E6D281DE486 /* CompError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA55D5D947DB669FA593989 /* CompError.swift */; };
 		6435EAC65A923255F2D5C95F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 26E2D5346429E0D1E057B3E2 /* FirebaseFirestore */; };
 		659732352668B3033531720D /* FeatureAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A062FB80D4FC748CB967906F /* FeatureAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		66A9EE5637BEB1D26653E19E /* TestDomainAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D35E86B0CA7B6A63753D8 /* TestDomainAuth.swift */; };
 		6BB89D3BD19008A5673CE30B /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = BF63024E76019F79AAD68BB2 /* ComposableArchitecture */; };
 		6DA1C57F9466CEBD28CE53EA /* TuistPlists+AppCraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDB1C6DA30182B376A2027 /* TuistPlists+AppCraft.swift */; };
 		6EA0B0BAA8FC1F9F22A9412D /* FeatureAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A062FB80D4FC748CB967906F /* FeatureAuth.framework */; };
+		7139B62D44A4AB57E283C423 /* CoreAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD8804EDD128CE7E513ED4B /* CoreAuth.swift */; };
 		72275EA79596DC1F08394BE7 /* DatabaseServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211D847B97888F65C1371332 /* DatabaseServiceType.swift */; };
-		740BA69B96A243AFACEE5D3C /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 475137E8C16CCE1A6AA2247F /* Shared.framework */; };
+		724F967649F8F915BD9393F1 /* CoreDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD7BEFBEF3271566A0BA296 /* CoreDatabase.framework */; };
 		7823A2D36D2CCEDA84B14041 /* FeatureAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A062FB80D4FC748CB967906F /* FeatureAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7855F8FA72BF69E64CAB17C9 /* ACRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512E1DE7D33209FEA476CA5 /* ACRow.swift */; };
 		79987CD15BBEACC5F112A6F9 /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE88E14F6A83A3BACEAC82C /* Permission.swift */; };
@@ -70,13 +68,13 @@
 		7E85187EEF36655B66BD14D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39279EA8EC0359AA385D2280 /* GoogleService-Info.plist */; };
 		7EAE9B2E9E32A4C74A3B19E4 /* ACFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC26F670E6BA1BC4080E046 /* ACFont.swift */; };
 		8069A51FCD22F6F87E9578E4 /* DomainAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 745567F97EBA16911F313CA4 /* DomainAuth.framework */; };
+		809EA35EE353FCAA7CDF9FBD /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B967185E207B9E2192B9DF2 /* info.plist */; };
 		80DDE474266CAF07846483DE /* ACGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D094749DF0655F45117D04 /* ACGrid.swift */; };
 		81003AD7D46F899BFE2B4619 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 300AABABDB1698545F13DF3F /* ComposableArchitecture */; };
 		834E6CEC9F8658157F8CA0B6 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81676581A893E266BD04A5FC /* AuthError.swift */; };
 		83E5C284DEF15864212C18C1 /* ACCoreTypeWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E25EB43C0E3B0600ADB7C58 /* ACCoreTypeWrapper.swift */; };
 		8487052C7E0F803BBEB34EE2 /* ACImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC72E06AF9A13F4CD8861C4 /* ACImage.swift */; };
 		868EED92F6B3042A1950160D /* DomainBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842411CFA5AAE9053413B395 /* DomainBoard.framework */; };
-		88D484ED76917A853CD32AEE /* CoreAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C982D0C96E11E8808D37BA4 /* CoreAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8919B8BFDD95704DF0C2C2B2 /* CoreUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB16A4A966D5FEA0097DC5D7 /* CoreUI.framework */; };
 		8935590D656B2579649FD79B /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539743E5C8FAC84FE1E9520D /* AppEnvironment.swift */; };
 		8F4120D46D16CD5C9C665953 /* ACText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E530D3BB5B2AE36DD54C84 /* ACText.swift */; };
@@ -95,11 +93,11 @@
 		AB17DA474D1FA9D97BE09C33 /* CoreOptionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5CB55E75593A3A3C71F470 /* CoreOptionType.swift */; };
 		AB50E6F8C73B3B5C178FBCC7 /* SectorOptionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861F8F4A4CA6702CCAD63E0E /* SectorOptionType.swift */; };
 		AC8CD9AF4DE93CE250C4482D /* CoreDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD7BEFBEF3271566A0BA296 /* CoreDatabase.framework */; };
-		AF2DB236CAB4B039FE133CFA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 97D93C6C8FAC89090F275640 /* FirebaseAuth */; };
 		B0B0CE140EBD9381302E56CB /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC0851CF07C089DB6D0564F /* UserSession.swift */; };
 		B4774D6EB3D416F08BBB5C71 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = F7936AAE5923AA987E1A7E12 /* ComposableArchitecture */; };
 		B6A84D80DA80B8A7B7E9631D /* FeatureBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2907BAFB763222AFE5C2ED9E /* FeatureBoard.framework */; };
 		BA25F6266D75DD02816BCC9C /* Sector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ADF243683F0D30B006D003 /* Sector.swift */; };
+		BC20F189A0A466BC3115FFB7 /* MockAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C344FBBAA77E013C8BF06C4C /* MockAuthService.swift */; };
 		BC65A62D8EF1888ED529C4E9 /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53962C599960321FDA135ECB /* AppFeature.swift */; };
 		BCFEFA4ACF41140A29FB820A /* FeatureComp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 847909B5AF91F4AACB195E80 /* FeatureComp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C0FC9C28B3001136329D94A0 /* AppCraftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF3A5A50A2B2961E6B79EF1 /* AppCraftApp.swift */; };
@@ -107,20 +105,21 @@
 		C4C88E9A8FD8E23C32289DBE /* TextOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F6E54898FAE9D16ACB908D /* TextOptionView.swift */; };
 		C893C26361AAEC62B8E1FD42 /* SectorOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73ACC4CB11B84D05DBDF5DE /* SectorOptionView.swift */; };
 		CABCC49D0BF1E083505C4C20 /* DomainComp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DE4F27E5B52F3DBEBFF9E8 /* DomainComp.framework */; };
+		CB8427EC54D9518BF7AAEC55 /* MockDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDE9051EB42ED591FCD3B5C /* MockDatabaseService.swift */; };
+		CEB3AFEA2A65FA2312325B3B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0952A3FC91C1EE9AFBB9153C /* FirebaseAuth */; };
 		D416A583B92A54959A219CCE /* CoreUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB16A4A966D5FEA0097DC5D7 /* CoreUI.framework */; };
 		DB3C8759ED103C6086FE7055 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 475137E8C16CCE1A6AA2247F /* Shared.framework */; };
 		DB3D13FB5A5806CE8859931D /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 475137E8C16CCE1A6AA2247F /* Shared.framework */; };
 		DB8E020CFC3544E2ABB66E37 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9552183A6F2482E0CF46A9FF /* SignInView.swift */; };
 		DE4DD2BCF026A8DD236E06D6 /* DomainAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F6C45FE47DE853057C6AA /* DomainAuth.swift */; };
+		E053107536A067D0F0A7471F /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D1E400ACBDA2740FC488D /* ExampleView.swift */; };
 		E3201D619AF78F45E360E965 /* DomainBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842411CFA5AAE9053413B395 /* DomainBoard.framework */; };
 		E636976645043F9171951A3C /* FeatureComp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847909B5AF91F4AACB195E80 /* FeatureComp.framework */; };
 		E80BFDFB65977C0659FF776A /* ACHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B250DB005C91ECDA84B634 /* ACHorizontal.swift */; };
 		EA1F6693B99A4D6F0D1729BC /* ACCoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89E9039D60DA767313186C3 /* ACCoreType.swift */; };
-		EA66C91ECF098F9B512363BB /* CoreDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB1BD5A1ADAF70EF04A9BCA /* CoreDatabase.swift */; };
 		EC49026050089A7112807FD7 /* TuistBundle+CoreUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0DC36B77A26606022E319C /* TuistBundle+CoreUI.swift */; };
 		ECA6DDBB3CFC2278BBB0C3D0 /* FeatureComp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847909B5AF91F4AACB195E80 /* FeatureComp.framework */; };
 		F74069946619C33E26631BA9 /* CoreAddingPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB621AF18B00939E15D36D5F /* CoreAddingPosition.swift */; };
-		F994F7C6459603F3A6E97B0D /* CoreAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C982D0C96E11E8808D37BA4 /* CoreAuth.framework */; };
 		FE439E6952AF8441D714D2F5 /* CreateCompView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A1E47EAEBE326BBE80927 /* CreateCompView.swift */; };
 		FEAA92AF2726B85B56078F19 /* AuthorizedAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8504022202D52F63717F5C /* AuthorizedAction.swift */; };
 		FF0EC5A9D37145F9C68C93DF /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 475137E8C16CCE1A6AA2247F /* Shared.framework */; };
@@ -162,19 +161,19 @@
 			remoteGlobalIDString = 989E240500472C0595F63BB7;
 			remoteInfo = DomainAuth;
 		};
-		1E6DDE535BB3B386674CD43D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8F4C1016A677C556F64E99E8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FB6D0738A3B72624B669F735;
-			remoteInfo = CoreDatabase;
-		};
 		26AB4B89586F79CD62E02788 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8F4C1016A677C556F64E99E8 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F91AE291BBB9F8243BF9C8D6;
 			remoteInfo = Shared;
+		};
+		2C6BDBE60DCDBEC155533BB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F4C1016A677C556F64E99E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB6D0738A3B72624B669F735;
+			remoteInfo = CoreDatabase;
 		};
 		3117C1216F49F74CBE46316F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -239,13 +238,6 @@
 			remoteGlobalIDString = D1760617507E1159CEDFCB2D;
 			remoteInfo = DomainComp;
 		};
-		779E7BD76FC87CCAC34239DA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8F4C1016A677C556F64E99E8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ED845508AFA96505A7E12461;
-			remoteInfo = CoreAuth;
-		};
 		856E3BCADF07673505521373 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8F4C1016A677C556F64E99E8 /* Project object */;
@@ -302,13 +294,6 @@
 			remoteGlobalIDString = 55D9D6BB4F3D334EAE6C36C1;
 			remoteInfo = FeatureAuth;
 		};
-		B961353C9550EDAE474D91C5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8F4C1016A677C556F64E99E8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F91AE291BBB9F8243BF9C8D6;
-			remoteInfo = Shared;
-		};
 		C317FF97C9A0E867F7581DF1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8F4C1016A677C556F64E99E8 /* Project object */;
@@ -346,16 +331,6 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		70B01313B07B189189DE2015 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7549AF2C08FCD89A8A8348FA /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -382,7 +357,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				88D484ED76917A853CD32AEE /* CoreAuth.framework in Embed Frameworks */,
 				50CE4BD34880E9B9C06B7772 /* CoreDatabase.framework in Embed Frameworks */,
 				33E1EF18FFC607F881969B89 /* CoreUI.framework in Embed Frameworks */,
 				49BAE403F352089BC6E4E01B /* Domain.framework in Embed Frameworks */,
@@ -464,7 +438,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				00B04B1FD58A3B9E4ED29C69 /* CoreAuth.framework in Embed Frameworks */,
 				966E6D264A4C61755ED569E1 /* CoreDatabase.framework in Embed Frameworks */,
 				0E534474D33060028C066EA8 /* CoreUI.framework in Embed Frameworks */,
 				60A6760ECAAF7827F9A86021 /* DomainAuth.framework in Embed Frameworks */,
@@ -489,25 +462,25 @@
 /* Begin PBXFileReference section */
 		045EA150BF320B437787C670 /* Domain-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Domain-Info.plist"; sourceTree = "<group>"; };
 		064876AC23107BACEC2EE84B /* ACColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACColumn.swift; sourceTree = "<group>"; };
-		192E54B32CF70E7400AA44E2 /* MockDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDatabaseService.swift; sourceTree = "<group>"; };
-		192E54B52CF70EEE00AA44E2 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
-		192E54B72CF70F2600AA44E2 /* MockAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthService.swift; sourceTree = "<group>"; };
-		192E54B92CF710B300AA44E2 /* TestDomainAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDomainAuth.swift; sourceTree = "<group>"; };
+		0A7807A5955B231BF77BC944 /* CoreDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDatabase.swift; sourceTree = "<group>"; };
+		192B00FD2CF8E80D0077FA90 /* SignInFailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInFailedView.swift; sourceTree = "<group>"; };
 		19E7EC8A997A431C11B30153 /* ACBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACBox.swift; sourceTree = "<group>"; };
 		1E8504022202D52F63717F5C /* AuthorizedAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizedAction.swift; sourceTree = "<group>"; };
 		1FCC538BF2ADB6CDB3977471 /* SectorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectorType.swift; sourceTree = "<group>"; };
-		20125D3893B1674375EB9D5E /* FeatureAuthExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "FeatureAuthExample-Info.plist"; sourceTree = "<group>"; };
 		211D847B97888F65C1371332 /* DatabaseServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseServiceType.swift; sourceTree = "<group>"; };
 		289D4036DDEECE98B5EEF692 /* DomainBoard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DomainBoard-Info.plist"; sourceTree = "<group>"; };
 		2907BAFB763222AFE5C2ED9E /* FeatureBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AD8804EDD128CE7E513ED4B /* CoreAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAuth.swift; sourceTree = "<group>"; };
 		2E25EB43C0E3B0600ADB7C58 /* ACCoreTypeWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACCoreTypeWrapper.swift; sourceTree = "<group>"; };
 		31E032589731F7CDCB9EA13D /* TuistAssets+CoreUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+CoreUI.swift"; sourceTree = "<group>"; };
 		3512E1DE7D33209FEA476CA5 /* ACRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACRow.swift; sourceTree = "<group>"; };
 		375F0BF7EECF108F274C5BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39279EA8EC0359AA385D2280 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3AC0851CF07C089DB6D0564F /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
+		3B2066EA5BAF7A037758EEB1 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 		406642E9A1825F863E3CCD7B /* CoreUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "CoreUI-Info.plist"; sourceTree = "<group>"; };
 		4454EC0B6AA358F90C3AD5F4 /* AppCraft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppCraft.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		466D1E400ACBDA2740FC488D /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
 		475137E8C16CCE1A6AA2247F /* Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50DECD00844E827A46A53DDB /* CoreListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreListView.swift; sourceTree = "<group>"; };
 		523A1E47EAEBE326BBE80927 /* CreateCompView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCompView.swift; sourceTree = "<group>"; };
@@ -516,14 +489,15 @@
 		557F969BD9A91FF77F5DD7F0 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		5BD7BEFBEF3271566A0BA296 /* CoreDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE88E14F6A83A3BACEAC82C /* Permission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permission.swift; sourceTree = "<group>"; };
+		5F1EA2FE8D8FBDF4FB7719AC /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		63DE637771814ED51398D94B /* Feature-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Feature-Info.plist"; sourceTree = "<group>"; };
+		6B967185E207B9E2192B9DF2 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = info.plist; sourceTree = "<group>"; };
 		6BA554CAF1C7AC7A23B78516 /* SelectCompView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCompView.swift; sourceTree = "<group>"; };
-		71E89227A1325B362928FD31 /* CoreAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAuth.swift; sourceTree = "<group>"; };
+		6FDE9051EB42ED591FCD3B5C /* MockDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDatabaseService.swift; sourceTree = "<group>"; };
 		745567F97EBA16911F313CA4 /* DomainAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DomainAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74BDB1C6DA30182B376A2027 /* TuistPlists+AppCraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistPlists+AppCraft.swift"; sourceTree = "<group>"; };
 		7520747198A6E4C23A04C51F /* FeatureAuthExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureAuthExample.swift; sourceTree = "<group>"; };
 		7A1CE662E1DAB08530595D28 /* NewSectorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSectorButton.swift; sourceTree = "<group>"; };
-		7C982D0C96E11E8808D37BA4 /* CoreAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E9FEB978F54C0B7517C028C /* ACColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACColor.swift; sourceTree = "<group>"; };
 		81676581A893E266BD04A5FC /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
 		826FCD11AF50E10097259405 /* FeatureCreateComp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCreateComp.swift; sourceTree = "<group>"; };
@@ -534,7 +508,6 @@
 		876A3BE3ADD75106AE0FB058 /* CompType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompType.swift; sourceTree = "<group>"; };
 		89457DC06C4FD9760622644C /* FeatureAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureAuth.swift; sourceTree = "<group>"; };
 		8A5BADA6E6936DE7C4D6FCF9 /* Shared-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Shared-Info.plist"; sourceTree = "<group>"; };
-		8DB1BD5A1ADAF70EF04A9BCA /* CoreDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDatabase.swift; sourceTree = "<group>"; };
 		90DF42EDA0D144838CD3FA16 /* FeatureAuthExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeatureAuthExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9552183A6F2482E0CF46A9FF /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		9E047FFF48411BBA024BADE6 /* FeatureBoard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "FeatureBoard-Info.plist"; sourceTree = "<group>"; };
@@ -552,7 +525,7 @@
 		BCC26F670E6BA1BC4080E046 /* ACFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACFont.swift; sourceTree = "<group>"; };
 		C179DE28370427D03B4C6D59 /* SectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectorView.swift; sourceTree = "<group>"; };
 		C2F6E54898FAE9D16ACB908D /* TextOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextOptionView.swift; sourceTree = "<group>"; };
-		C32AEBD881A185A7BD0FD0C6 /* CoreAuth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "CoreAuth-Info.plist"; sourceTree = "<group>"; };
+		C344FBBAA77E013C8BF06C4C /* MockAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthService.swift; sourceTree = "<group>"; };
 		C4B4C5112F88C1BD6454A4E3 /* DomainAuth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DomainAuth-Info.plist"; sourceTree = "<group>"; };
 		C5E530D3BB5B2AE36DD54C84 /* ACText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACText.swift; sourceTree = "<group>"; };
 		C73ACC4CB11B84D05DBDF5DE /* SectorOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectorOptionView.swift; sourceTree = "<group>"; };
@@ -560,7 +533,9 @@
 		C85ADF440416BDFFC5BD2C9B /* TuistBundle+AppCraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+AppCraft.swift"; sourceTree = "<group>"; };
 		CC4BEE38DFAF7D59027113AD /* FeatureComp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureComp.swift; sourceTree = "<group>"; };
 		CD9A0D184C1CF17DFDD67F5E /* DomainComp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DomainComp-Info.plist"; sourceTree = "<group>"; };
+		CE9D35E86B0CA7B6A63753D8 /* TestDomainAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDomainAuth.swift; sourceTree = "<group>"; };
 		CF1F6C45FE47DE853057C6AA /* DomainAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainAuth.swift; sourceTree = "<group>"; };
+		D27AF8C726B64B2A84E3F9B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D592EE7423F3D25906DBDBE9 /* CoreDatabase-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "CoreDatabase-Info.plist"; sourceTree = "<group>"; };
 		D5B250DB005C91ECDA84B634 /* ACHorizontal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACHorizontal.swift; sourceTree = "<group>"; };
 		D798FB04D6ED11E190A705E1 /* CraftCoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraftCoreView.swift; sourceTree = "<group>"; };
@@ -572,8 +547,6 @@
 		F1DD9750846701E60CA4F044 /* FeatureComp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "FeatureComp-Info.plist"; sourceTree = "<group>"; };
 		F32844CE05AD8229D63A5EF4 /* EditCompView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCompView.swift; sourceTree = "<group>"; };
 		F44E2197207CFD958AF6AB2E /* TuistAssets+AppCraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+AppCraft.swift"; sourceTree = "<group>"; };
-		F5015A4F9A65143FCC72A5F4 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
-		F5E3DB9894C1B41B1B4B9B8C /* AppCraft-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "AppCraft-Info.plist"; sourceTree = "<group>"; };
 		F659C68040BCD88D2D4EAA84 /* FeatureBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureBoard.swift; sourceTree = "<group>"; };
 		F8E9E713A4B9354D0C9027AE /* Comp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comp.swift; sourceTree = "<group>"; };
 		FB16A4A966D5FEA0097DC5D7 /* CoreUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -644,6 +617,7 @@
 			files = (
 				DB3D13FB5A5806CE8859931D /* Shared.framework in Frameworks */,
 				6435EAC65A923255F2D5C95F /* FirebaseFirestore in Frameworks */,
+				CEB3AFEA2A65FA2312325B3B /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,7 +634,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F994F7C6459603F3A6E97B0D /* CoreAuth.framework in Frameworks */,
+				724F967649F8F915BD9393F1 /* CoreDatabase.framework in Frameworks */,
 				00F2ACEF073644D2209F9B8A /* Shared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -704,16 +678,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7CFC23D3549FCF3EBD312F5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3B055136DC979DDB372BE0DF /* CoreDatabase.framework in Frameworks */,
-				740BA69B96A243AFACEE5D3C /* Shared.framework in Frameworks */,
-				AF2DB236CAB4B039FE133CFA /* FirebaseAuth in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -729,6 +693,7 @@
 			isa = PBXGroup;
 			children = (
 				9552183A6F2482E0CF46A9FF /* SignInView.swift */,
+				192B00FD2CF8E80D0077FA90 /* SignInFailedView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -737,7 +702,6 @@
 			isa = PBXGroup;
 			children = (
 				E0CC3EF82F1527BC6E04B214 /* AppCraft */,
-				E687432767B189C1FA5BBC86 /* CoreAuth */,
 				6A8392EBA096BEE1C942C5C7 /* CoreDatabase */,
 				70E55CBF7ABAA6C02E39D73B /* CoreUI */,
 				5AB11BBB498F582747E433D2 /* DomainAuth */,
@@ -816,6 +780,16 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		576011BD0265E51449469EF6 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				0A7807A5955B231BF77BC944 /* CoreDatabase.swift */,
+				3B2066EA5BAF7A037758EEB1 /* DatabaseService.swift */,
+				6FDE9051EB42ED591FCD3B5C /* MockDatabaseService.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		58829AAFB4C7A9EC61FEC94D /* FeatureAuth */ = {
 			isa = PBXGroup;
 			children = (
@@ -852,6 +826,7 @@
 		65806133C223C1127C324457 /* FeatureAuthExample */ = {
 			isa = PBXGroup;
 			children = (
+				75B5D3ACA0375678B909C73D /* Resources */,
 				DBA98BC8BC5A97BB0C5740B1 /* Sources */,
 			);
 			path = FeatureAuthExample;
@@ -869,7 +844,7 @@
 			isa = PBXGroup;
 			children = (
 				CF1F6C45FE47DE853057C6AA /* DomainAuth.swift */,
-				192E54B92CF710B300AA44E2 /* TestDomainAuth.swift */,
+				CE9D35E86B0CA7B6A63753D8 /* TestDomainAuth.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -891,6 +866,14 @@
 			path = CoreUI;
 			sourceTree = "<group>";
 		};
+		75B5D3ACA0375678B909C73D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D27AF8C726B64B2A84E3F9B4 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		7AB7C6F436D9DE8B5116F0A2 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -906,8 +889,6 @@
 		7E64F4E2C7E859E5A3BA4D85 /* InfoPlists */ = {
 			isa = PBXGroup;
 			children = (
-				F5E3DB9894C1B41B1B4B9B8C /* AppCraft-Info.plist */,
-				C32AEBD881A185A7BD0FD0C6 /* CoreAuth-Info.plist */,
 				D592EE7423F3D25906DBDBE9 /* CoreDatabase-Info.plist */,
 				406642E9A1825F863E3CCD7B /* CoreUI-Info.plist */,
 				045EA150BF320B437787C670 /* Domain-Info.plist */,
@@ -916,7 +897,6 @@
 				CD9A0D184C1CF17DFDD67F5E /* DomainComp-Info.plist */,
 				63DE637771814ED51398D94B /* Feature-Info.plist */,
 				A08FD658858817CC0889CD70 /* FeatureAuth-Info.plist */,
-				20125D3893B1674375EB9D5E /* FeatureAuthExample-Info.plist */,
 				9E047FFF48411BBA024BADE6 /* FeatureBoard-Info.plist */,
 				F1DD9750846701E60CA4F044 /* FeatureComp-Info.plist */,
 				8A5BADA6E6936DE7C4D6FCF9 /* Shared-Info.plist */,
@@ -924,22 +904,11 @@
 			path = InfoPlists;
 			sourceTree = "<group>";
 		};
-		88179217A9F8D4A5789C9DC4 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				71E89227A1325B362928FD31 /* CoreAuth.swift */,
-				192E54B52CF70EEE00AA44E2 /* AuthService.swift */,
-				192E54B72CF70F2600AA44E2 /* MockAuthService.swift */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
 		886EF0846F3FE06790FD05C1 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				8DB1BD5A1ADAF70EF04A9BCA /* CoreDatabase.swift */,
-				F5015A4F9A65143FCC72A5F4 /* DatabaseService.swift */,
-				192E54B32CF70E7400AA44E2 /* MockDatabaseService.swift */,
+				C1247A4386752EA00042D328 /* Auth */,
+				576011BD0265E51449469EF6 /* Database */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -1026,6 +995,7 @@
 			isa = PBXGroup;
 			children = (
 				39279EA8EC0359AA385D2280 /* GoogleService-Info.plist */,
+				6B967185E207B9E2192B9DF2 /* info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1040,6 +1010,16 @@
 				74BDB1C6DA30182B376A2027 /* TuistPlists+AppCraft.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		C1247A4386752EA00042D328 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				5F1EA2FE8D8FBDF4FB7719AC /* AuthService.swift */,
+				2AD8804EDD128CE7E513ED4B /* CoreAuth.swift */,
+				C344FBBAA77E013C8BF06C4C /* MockAuthService.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		C30E8086A6A1635CE2DD7D20 /* Feature */ = {
@@ -1094,6 +1074,7 @@
 		DBA98BC8BC5A97BB0C5740B1 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				466D1E400ACBDA2740FC488D /* ExampleView.swift */,
 				7520747198A6E4C23A04C51F /* FeatureAuthExample.swift */,
 			);
 			path = Sources;
@@ -1134,14 +1115,6 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
-		E687432767B189C1FA5BBC86 /* CoreAuth */ = {
-			isa = PBXGroup;
-			children = (
-				88179217A9F8D4A5789C9DC4 /* Sources */,
-			);
-			path = CoreAuth;
-			sourceTree = "<group>";
-		};
 		E82C7115080F8259A03C508A /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -1175,7 +1148,6 @@
 			isa = PBXGroup;
 			children = (
 				4454EC0B6AA358F90C3AD5F4 /* AppCraft.app */,
-				7C982D0C96E11E8808D37BA4 /* CoreAuth.framework */,
 				5BD7BEFBEF3271566A0BA296 /* CoreDatabase.framework */,
 				FB16A4A966D5FEA0097DC5D7 /* CoreUI.framework */,
 				A87F81D32D83CD2C04F924D7 /* Domain.framework */,
@@ -1342,7 +1314,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				2956078DA6ED50634009B881 /* PBXTargetDependency */,
+				137F6D6F53DCCE8A72E2B446 /* PBXTargetDependency */,
 				73B21983D89B7C7619DEFDBC /* PBXTargetDependency */,
 			);
 			name = DomainAuth;
@@ -1435,29 +1407,6 @@
 			productReference = 2907BAFB763222AFE5C2ED9E /* FeatureBoard.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		ED845508AFA96505A7E12461 /* CoreAuth */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F769526313B297382C7C7B93 /* Build configuration list for PBXNativeTarget "CoreAuth" */;
-			buildPhases = (
-				0265B0E2289AF7DF5A3D8EF6 /* Sources */,
-				558916011EA5A3B54365FC9A /* Resources */,
-				70B01313B07B189189DE2015 /* Embed Frameworks */,
-				F7CFC23D3549FCF3EBD312F5 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9D40A711D1300AEE50900D81 /* PBXTargetDependency */,
-				A85A120038BD2D10A2905063 /* PBXTargetDependency */,
-			);
-			name = CoreAuth;
-			packageProductDependencies = (
-				97D93C6C8FAC89090F275640 /* FirebaseAuth */,
-			);
-			productName = CoreAuth;
-			productReference = 7C982D0C96E11E8808D37BA4 /* CoreAuth.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		F91AE291BBB9F8243BF9C8D6 /* Shared */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48104BDE9CCF2A1651A3B616 /* Build configuration list for PBXNativeTarget "Shared" */;
@@ -1493,6 +1442,7 @@
 			name = CoreDatabase;
 			packageProductDependencies = (
 				26E2D5346429E0D1E057B3E2 /* FirebaseFirestore */,
+				0952A3FC91C1EE9AFBB9153C /* FirebaseAuth */,
 			);
 			productName = CoreDatabase;
 			productReference = 5BD7BEFBEF3271566A0BA296 /* CoreDatabase.framework */;
@@ -1535,7 +1485,6 @@
 				DA7FD873C6B213EAB21110BE /* FeatureBoard */,
 				FB6D0738A3B72624B669F735 /* CoreDatabase */,
 				A95FCAC40C2DA3AA0842074E /* CoreUI */,
-				ED845508AFA96505A7E12461 /* CoreAuth */,
 				F91AE291BBB9F8243BF9C8D6 /* Shared */,
 			);
 		};
@@ -1562,14 +1511,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E85187EEF36655B66BD14D5 /* GoogleService-Info.plist in Resources */,
+				809EA35EE353FCAA7CDF9FBD /* info.plist in Resources */,
 				3BE356BB668B03768764FA75 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		558916011EA5A3B54365FC9A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1646,22 +1589,12 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0265B0E2289AF7DF5A3D8EF6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1C8D942071EAD9BE86AD73E8 /* CoreAuth.swift in Sources */,
-				192E54B62CF70EEE00AA44E2 /* AuthService.swift in Sources */,
-				192E54B82CF70F2600AA44E2 /* MockAuthService.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		10236A37D1E3A94B43D0DF09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DE4DD2BCF026A8DD236E06D6 /* DomainAuth.swift in Sources */,
-				192E54BA2CF710B300AA44E2 /* TestDomainAuth.swift in Sources */,
+				66A9EE5637BEB1D26653E19E /* TestDomainAuth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1669,6 +1602,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E053107536A067D0F0A7471F /* ExampleView.swift in Sources */,
 				2BF9229B22F0685C604EF686 /* FeatureAuthExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1737,9 +1671,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				192E54B42CF70E7400AA44E2 /* MockDatabaseService.swift in Sources */,
-				EA66C91ECF098F9B512363BB /* CoreDatabase.swift in Sources */,
-				202FF16A7503F5F53713ACAA /* DatabaseService.swift in Sources */,
+				42F385CE0B74985138B4341F /* AuthService.swift in Sources */,
+				7139B62D44A4AB57E283C423 /* CoreAuth.swift in Sources */,
+				BC20F189A0A466BC3115FFB7 /* MockAuthService.swift in Sources */,
+				3CD12E105A93C93EC2FD1C5A /* CoreDatabase.swift in Sources */,
+				4EE1D4980E14931CACB229AD /* DatabaseService.swift in Sources */,
+				CB8427EC54D9518BF7AAEC55 /* MockDatabaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1763,6 +1700,7 @@
 			files = (
 				37A3BD970B09F54DBA7A8974 /* FeatureAuth.swift in Sources */,
 				DB8E020CFC3544E2ABB66E37 /* SignInView.swift in Sources */,
+				192B00FE2CF8E80D0077FA90 /* SignInFailedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1834,6 +1772,12 @@
 			target = FB6D0738A3B72624B669F735 /* CoreDatabase */;
 			targetProxy = 856E3BCADF07673505521373 /* PBXContainerItemProxy */;
 		};
+		137F6D6F53DCCE8A72E2B446 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CoreDatabase;
+			target = FB6D0738A3B72624B669F735 /* CoreDatabase */;
+			targetProxy = 2C6BDBE60DCDBEC155533BB3 /* PBXContainerItemProxy */;
+		};
 		25EF69A489E7E426EA200554 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Shared;
@@ -1845,12 +1789,6 @@
 			name = CoreUI;
 			target = A95FCAC40C2DA3AA0842074E /* CoreUI */;
 			targetProxy = 91AEBA97D4496EA7E220F471 /* PBXContainerItemProxy */;
-		};
-		2956078DA6ED50634009B881 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CoreAuth;
-			target = ED845508AFA96505A7E12461 /* CoreAuth */;
-			targetProxy = 779E7BD76FC87CCAC34239DA /* PBXContainerItemProxy */;
 		};
 		3BA71A29C84532A1F03C1F77 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1906,23 +1844,11 @@
 			target = 1BF7BD2827EF96FC3CA24A4A /* Feature */;
 			targetProxy = 0DC4464A3E85EBE781FD6F79 /* PBXContainerItemProxy */;
 		};
-		9D40A711D1300AEE50900D81 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CoreDatabase;
-			target = FB6D0738A3B72624B669F735 /* CoreDatabase */;
-			targetProxy = 1E6DDE535BB3B386674CD43D /* PBXContainerItemProxy */;
-		};
 		9DB33170F2C73F929F8D9530 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FeatureBoard;
 			target = DA7FD873C6B213EAB21110BE /* FeatureBoard */;
 			targetProxy = 669FE631ECFAB3C0A959CF33 /* PBXContainerItemProxy */;
-		};
-		A85A120038BD2D10A2905063 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Shared;
-			target = F91AE291BBB9F8243BF9C8D6 /* Shared */;
-			targetProxy = B961353C9550EDAE474D91C5 /* PBXContainerItemProxy */;
 		};
 		BF63C555B24D8D7BFA96838B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2052,8 +1978,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = JRXGXW25BG;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Derived/InfoPlists/FeatureAuthExample-Info.plist";
+				INFOPLIST_FILE = Targets/FeatureAuthExample/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2124,39 +2051,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appcraft.featureauth;
 				PRODUCT_NAME = FeatureAuth;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		23B40FAADD792DCB8179DC73 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Derived/InfoPlists/CoreAuth-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.appcraft.coreauth;
-				PRODUCT_NAME = CoreAuth;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -2302,8 +2196,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = JRXGXW25BG;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Derived/InfoPlists/AppCraft-Info.plist";
+				INFOPLIST_FILE = Targets/AppCraft/Resources/info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2361,8 +2256,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = JRXGXW25BG;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Derived/InfoPlists/FeatureAuthExample-Info.plist";
+				INFOPLIST_FILE = Targets/FeatureAuthExample/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2382,47 +2278,14 @@
 			};
 			name = Debug;
 		};
-		5204F84E68774DA60A19E2D3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Derived/InfoPlists/CoreAuth-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.appcraft.coreauth;
-				PRODUCT_NAME = CoreAuth;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_COMPILATION_MODE = singlefile;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		53643990F746666854E3F6C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = JRXGXW25BG;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Derived/InfoPlists/AppCraft-Info.plist";
+				INFOPLIST_FILE = Targets/AppCraft/Resources/info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3119,15 +2982,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F769526313B297382C7C7B93 /* Build configuration list for PBXNativeTarget "CoreAuth" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5204F84E68774DA60A19E2D3 /* Debug */,
-				23B40FAADD792DCB8179DC73 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		FF17ECCE1896110046C68385 /* Build configuration list for PBXNativeTarget "Feature" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -3159,6 +3013,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0952A3FC91C1EE9AFBB9153C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseAuth;
+		};
 		26E2D5346429E0D1E057B3E2 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FirebaseFirestore;
@@ -3166,10 +3024,6 @@
 		300AABABDB1698545F13DF3F /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ComposableArchitecture;
-		};
-		97D93C6C8FAC89090F275640 /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = FirebaseAuth;
 		};
 		BF63024E76019F79AAD68BB2 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;

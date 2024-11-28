@@ -20,6 +20,7 @@
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 public enum CoreUIAsset {
+  public static let googleSignin = CoreUIImages(name: "google_signin")
   public static let blue = CoreUIColors(name: "Blue")
   public static let darkGray = CoreUIColors(name: "DarkGray")
   public static let gray1 = CoreUIColors(name: "Gray1")
@@ -47,6 +48,7 @@ public enum CoreUIAsset {
   public static let icTextWhite = CoreUIImages(name: "ic_text_white")
   public static let plusCircleBlack = CoreUIImages(name: "plus_circle_black")
   public static let plusCircleWhite = CoreUIImages(name: "plus_circle_white")
+  public static let guideLogo = CoreUIImages(name: "guide_logo")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 

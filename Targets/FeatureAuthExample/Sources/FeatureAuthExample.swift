@@ -13,7 +13,8 @@ struct AppCraftApp: App {
     
     var body: some Scene {
         WindowGroup {
-            SignInView()
+            ExampleView()
+                .background(Color.white)
         }
     }
 }

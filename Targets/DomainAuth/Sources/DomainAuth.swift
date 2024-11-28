@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import CoreAuth
+import CoreDatabase
 import Shared
 
 public class DomainAuth {

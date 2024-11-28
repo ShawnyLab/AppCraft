@@ -13,7 +13,7 @@ public actor MockDatabaseService: DatabaseService {
                                                               email: "Test@gmail.com",
                                                               displayName: "Shawn",
                                                               permissions: [.read])]
-    public var competitions: [UUID: any CompType] = [:]
+    public var comps: [UUID: any CompType] = [:]
     
     public init() { }
     
@@ -33,22 +33,22 @@ public actor MockDatabaseService: DatabaseService {
     }
     
     public func saveComp(_ comp: any CompType) async throws {
-        competitions[comp.id] = comp
+        comps[comp.id] = comp
     }
     
     public func fetchComps() async throws -> [any CompType] {
-        Array(competitions.values)
+        Array(comps.values)
     }
     
     public func fetchComp(id: UUID) async throws -> any CompType {
-        guard let comp = competitions[id] else {
+        guard let comp = comps[id] else {
             throw DatabaseError.notFound
         }
         return comp
     }
     
     public func deleteComp(id: UUID) async throws {
-        competitions.removeValue(forKey: id)
+        comps.removeValue(forKey: id)
     }
 }
 

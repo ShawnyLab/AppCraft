@@ -28,20 +28,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ED845508AFA96505A7E12461"
-               BuildableName = "CoreAuth.framework"
-               BlueprintName = "CoreAuth"
-               ReferencedContainer = "container:AppCraft.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "FB6D0738A3B72624B669F735"
                BuildableName = "CoreDatabase.framework"
                BlueprintName = "CoreDatabase"

@@ -7,14 +7,14 @@
 
 import Foundation
 import Shared
-import CoreAuth
+import CoreDatabase
 
 // MARK: - Test Implementations for DomainAuth
 public final class TestDomainAuth: DomainAuth {
     private var mockUser: UserSession?
     private var mockPermissions: Set<Permission> = [.read]
     
-    override public init(auth: AuthService = MockAuthService()) {
+    override public init(auth: AuthService = MockCoreAuthService()) {
         super.init(auth: auth)
     }
     
