@@ -1,0 +1,1436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06291DB5CB07EB9B6B949196 /* DomainAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B1BEE74531C4F2A2553561 /* DomainAuth.swift */; };
+		0FBBBFA59F4FD0DEAB03FC34 /* CoreService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1A11B64F96A5A302F53C44D /* CoreService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1FF896CAAF16E1E1C0E6BD3A /* CoreService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A11B64F96A5A302F53C44D /* CoreService.framework */; };
+		21971A1C8B5A259D6AAA7099 /* AppCraftCoreUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDD36471AD024AC5F7DEE12D /* AppCraftCoreUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		249F37713BC2F50CFFE53CDE /* FeatureAuthExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52805924476166BB7EB74D36 /* FeatureAuthExample.swift */; };
+		2AC38797BE45FC1CEAECBD06 /* FeatureAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDDD1B531F40A359358F7C /* FeatureAuth.swift */; };
+		495F7A8A160CE5E38E4554D1 /* CoreService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A11B64F96A5A302F53C44D /* CoreService.framework */; };
+		4B429398FB06B3CC31B637A6 /* MockDomainAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4D1F1D93DD635B543CABF8 /* MockDomainAuth.framework */; };
+		4F7564386EB7D536C40B1C33 /* DomainAuthInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEEB47BE01303EF3D830FAF /* DomainAuthInterface.swift */; };
+		51112C54BD9EC6A59D6947A0 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4938CE263F999D963F94BC20 /* ExampleView.swift */; };
+		5591D36C0480949B17A68B9E /* MockDomainAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38F61EEFC0CD6430BF8FC6D /* MockDomainAuth.swift */; };
+		7368CB9D2C1F7E172BC3804E /* MockDomainAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4D1F1D93DD635B543CABF8 /* MockDomainAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		748811E829218EA5D130F02F /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 15F996B4F2193A99D6BAB162 /* ComposableArchitecture */; };
+		875BE398910D53A1B34A5C3B /* AppCraftCoreUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD36471AD024AC5F7DEE12D /* AppCraftCoreUI.framework */; };
+		901F5538360CD89ED6A90010 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 070BB430795F281FFC78590E /* FirebaseFirestore */; };
+		9118574774090AFE7B4D1FA6 /* Shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A124FCAAF1C2119BB583854 /* Shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		98E948762FF968F2291B5E7F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9362841FDBFC80714BD96004 /* SignInView.swift */; };
+		9C007679BE2C0AA6C49D64CB /* SignInFailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F321A78ADD197398171E0D0D /* SignInFailedView.swift */; };
+		9DEC7603E57062F5F7A17AFC /* FeatureAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C2873D511E30B571D444A1 /* FeatureAuth.framework */; };
+		9E51CA6336F6C822CDC99B7D /* FeatureAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4C2873D511E30B571D444A1 /* FeatureAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A237116446D168C9320477B0 /* DomainAuthInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CBCCCD93B2EBC9742A0BB3 /* DomainAuthInterface.framework */; };
+		AB4322196894D1DC8E9540F0 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A124FCAAF1C2119BB583854 /* Shared.framework */; };
+		CB659074D4B8ABAB96868C40 /* DomainAuthInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04CBCCCD93B2EBC9742A0BB3 /* DomainAuthInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D237830050260AA9CAB86490 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A124FCAAF1C2119BB583854 /* Shared.framework */; };
+		D42B8B68E6DEE6115EC36F39 /* DomainAuthInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CBCCCD93B2EBC9742A0BB3 /* DomainAuthInterface.framework */; };
+		D618A7964BD7065364BCB586 /* UserRepositoryInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6C08153E4DF9145DB425B2 /* UserRepositoryInterface.framework */; };
+		DAF87C8EED37494F5AE3254F /* DomainAuthInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CBCCCD93B2EBC9742A0BB3 /* DomainAuthInterface.framework */; };
+		DC6B1102AE5041BBDF3F6EAD /* UserRepositoryInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6C08153E4DF9145DB425B2 /* UserRepositoryInterface.framework */; };
+		F6088A7BE615ACDFC84AD719 /* DomainAuthInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CBCCCD93B2EBC9742A0BB3 /* DomainAuthInterface.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12F7A3E39820807D9124786C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA40E33F324DE3832C84475C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F72DBB58503589822D7F456A;
+			remoteInfo = UserRepositoryInterface;
+		};
+		336A52CBF8FDDD8BBB0D90F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA40E33F324DE3832C84475C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1C825BA5A5E8AA8717D0321;
+			remoteInfo = DomainAuthInterface;
+		};
+		34385C6B58D03D7713B2E234 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA40E33F324DE3832C84475C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F72DBB58503589822D7F456A;
+			remoteInfo = UserRepositoryInterface;
+		};
+		3E3A4971B666823954BD52D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA40E33F324DE3832C84475C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 006DD1789BA53D9BED021B8B;
+			remoteInfo = MockDomainAuth;
+		};
+		57F02DC98BD2E8C3B54A7A08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA40E33F324DE3832C84475C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1C825BA5A5E8AA8717D0321;
+			remoteInfo = DomainAuthInterface;
+		};
+		9A312EFABDF75BA42EA349D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA40E33F324DE3832C84475C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1C825BA5A5E8AA8717D0321;
+			remoteInfo = DomainAuthInterface;
+		};
+		D8CAD2D84FFFD31965078743 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA40E33F324DE3832C84475C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1C825BA5A5E8AA8717D0321;
+			remoteInfo = DomainAuthInterface;
+		};
+		E9313B9F319E093398C25528 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA40E33F324DE3832C84475C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A76A4F8564C5F80FA2BDBE75;
+			remoteInfo = FeatureAuth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		18DBEB8A70EF0F58BC9D0677 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				21971A1C8B5A259D6AAA7099 /* AppCraftCoreUI.framework in Embed Frameworks */,
+				0FBBBFA59F4FD0DEAB03FC34 /* CoreService.framework in Embed Frameworks */,
+				CB659074D4B8ABAB96868C40 /* DomainAuthInterface.framework in Embed Frameworks */,
+				9E51CA6336F6C822CDC99B7D /* FeatureAuth.framework in Embed Frameworks */,
+				7368CB9D2C1F7E172BC3804E /* MockDomainAuth.framework in Embed Frameworks */,
+				9118574774090AFE7B4D1FA6 /* Shared.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		514C6376184CF3A153DAE0BB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B578250DE5AE90CDD11BE12 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC116C6FCCAABF758704C750 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2985E037C214053D977B644 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C570A703E2092116BC89BB83 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9637D83E2004B920419B451 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00B1BEE74531C4F2A2553561 /* DomainAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainAuth.swift; sourceTree = "<group>"; };
+		04CBCCCD93B2EBC9742A0BB3 /* DomainAuthInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DomainAuthInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A4D1F1D93DD635B543CABF8 /* MockDomainAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MockDomainAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26D1877520A597A4D0797877 /* UserRepository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UserRepository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		282D702BF70A18F53172C053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2D2A5A06BB67A583B7E1FF97 /* FeatureAuthExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeatureAuthExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DBD9C93A96076339A6EF591 /* DomainAuth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DomainAuth-Info.plist"; sourceTree = "<group>"; };
+		2EEEB47BE01303EF3D830FAF /* DomainAuthInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainAuthInterface.swift; sourceTree = "<group>"; };
+		46C1A5C943646779BA99E64E /* UserRepository-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "UserRepository-Info.plist"; sourceTree = "<group>"; };
+		4938CE263F999D963F94BC20 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		52501E867861F45A151B223C /* DomainAuthInterface-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DomainAuthInterface-Info.plist"; sourceTree = "<group>"; };
+		52805924476166BB7EB74D36 /* FeatureAuthExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureAuthExample.swift; sourceTree = "<group>"; };
+		5A124FCAAF1C2119BB583854 /* Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A228FDFD6904F50558D3155 /* DomainAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DomainAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76F7A7A9E42D2C356FC2F108 /* MockDomainAuth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MockDomainAuth-Info.plist"; sourceTree = "<group>"; };
+		836CC36B13D58B84E58EDBBD /* FeatureAuth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "FeatureAuth-Info.plist"; sourceTree = "<group>"; };
+		9362841FDBFC80714BD96004 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		C46430FC5EF5ACE330921AF0 /* UserRepositoryInterface-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "UserRepositoryInterface-Info.plist"; sourceTree = "<group>"; };
+		CBDDDD1B531F40A359358F7C /* FeatureAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureAuth.swift; sourceTree = "<group>"; };
+		D38F61EEFC0CD6430BF8FC6D /* MockDomainAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDomainAuth.swift; sourceTree = "<group>"; };
+		EDD36471AD024AC5F7DEE12D /* AppCraftCoreUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppCraftCoreUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A11B64F96A5A302F53C44D /* CoreService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F321A78ADD197398171E0D0D /* SignInFailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInFailedView.swift; sourceTree = "<group>"; };
+		F4C2873D511E30B571D444A1 /* FeatureAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB6C08153E4DF9145DB425B2 /* UserRepositoryInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UserRepositoryInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15B8D9280DDE718AD71179E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FF896CAAF16E1E1C0E6BD3A /* CoreService.framework in Frameworks */,
+				AB4322196894D1DC8E9540F0 /* Shared.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2258BF7153EEE162532F7142 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D42B8B68E6DEE6115EC36F39 /* DomainAuthInterface.framework in Frameworks */,
+				9DEC7603E57062F5F7A17AFC /* FeatureAuth.framework in Frameworks */,
+				4B429398FB06B3CC31B637A6 /* MockDomainAuth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C0D5ED4268786B80CB59EA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC6B1102AE5041BBDF3F6EAD /* UserRepositoryInterface.framework in Frameworks */,
+				901F5538360CD89ED6A90010 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C1566E6083621A7A56D3D7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF87C8EED37494F5AE3254F /* DomainAuthInterface.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87DB306E0E4AF91D1414B5D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495F7A8A160CE5E38E4554D1 /* CoreService.framework in Frameworks */,
+				D237830050260AA9CAB86490 /* Shared.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C398DD5C90864B3DB0E6D8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6088A7BE615ACDFC84AD719 /* DomainAuthInterface.framework in Frameworks */,
+				D618A7964BD7065364BCB586 /* UserRepositoryInterface.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAD363325BE067B15F9CC4EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				875BE398910D53A1B34A5C3B /* AppCraftCoreUI.framework in Frameworks */,
+				A237116446D168C9320477B0 /* DomainAuthInterface.framework in Frameworks */,
+				748811E829218EA5D130F02F /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		406E23D6D48BD72908620DC6 = {
+			isa = PBXGroup;
+			children = (
+				F04E30BDD88653161D7F0D9C /* Project */,
+				CED3748A7ADC488117832E67 /* Compiled */,
+				B89736A4BF04CCE7EE911095 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		56A11FD82FE629624E811C64 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				D38F61EEFC0CD6430BF8FC6D /* MockDomainAuth.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		575F4220108DC5C2BC98C27C /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				E894DD104AC8F55C8ECD81D4 /* Resources */,
+				4938CE263F999D963F94BC20 /* ExampleView.swift */,
+				52805924476166BB7EB74D36 /* FeatureAuthExample.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		6C16CED6565ECA6D1F227BE1 /* DomainInterface */ = {
+			isa = PBXGroup;
+			children = (
+				2EEEB47BE01303EF3D830FAF /* DomainAuthInterface.swift */,
+			);
+			path = DomainInterface;
+			sourceTree = "<group>";
+		};
+		7FDE0D6A84690D9C41FB8732 /* Derived */ = {
+			isa = PBXGroup;
+			children = (
+				F5CC268212B20A21E4308D4F /* InfoPlists */,
+			);
+			path = Derived;
+			sourceTree = "<group>";
+		};
+		860EC5A8771D6C404D8356D9 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				CBDDDD1B531F40A359358F7C /* FeatureAuth.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		A9F906AA39E84278F0879A00 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EB5CB71276166D16B2DE0DE6 /* Domain */,
+				6C16CED6565ECA6D1F227BE1 /* DomainInterface */,
+				575F4220108DC5C2BC98C27C /* Example */,
+				EA6926AD9EEC3ADF76D444CA /* Feature */,
+				56A11FD82FE629624E811C64 /* Mock */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B89736A4BF04CCE7EE911095 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDD36471AD024AC5F7DEE12D /* AppCraftCoreUI.framework */,
+				F1A11B64F96A5A302F53C44D /* CoreService.framework */,
+				6A228FDFD6904F50558D3155 /* DomainAuth.framework */,
+				04CBCCCD93B2EBC9742A0BB3 /* DomainAuthInterface.framework */,
+				F4C2873D511E30B571D444A1 /* FeatureAuth.framework */,
+				2D2A5A06BB67A583B7E1FF97 /* FeatureAuthExample.app */,
+				1A4D1F1D93DD635B543CABF8 /* MockDomainAuth.framework */,
+				5A124FCAAF1C2119BB583854 /* Shared.framework */,
+				26D1877520A597A4D0797877 /* UserRepository.framework */,
+				FB6C08153E4DF9145DB425B2 /* UserRepositoryInterface.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CED3748A7ADC488117832E67 /* Compiled */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Compiled;
+			sourceTree = "<group>";
+		};
+		E894DD104AC8F55C8ECD81D4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				282D702BF70A18F53172C053 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EA6926AD9EEC3ADF76D444CA /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				860EC5A8771D6C404D8356D9 /* Feature */,
+				F9BA681B2D19E0B9128CEA78 /* Views */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		EB5CB71276166D16B2DE0DE6 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				00B1BEE74531C4F2A2553561 /* DomainAuth.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F04E30BDD88653161D7F0D9C /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				7FDE0D6A84690D9C41FB8732 /* Derived */,
+				A9F906AA39E84278F0879A00 /* Sources */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		F5CC268212B20A21E4308D4F /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				2DBD9C93A96076339A6EF591 /* DomainAuth-Info.plist */,
+				52501E867861F45A151B223C /* DomainAuthInterface-Info.plist */,
+				836CC36B13D58B84E58EDBBD /* FeatureAuth-Info.plist */,
+				76F7A7A9E42D2C356FC2F108 /* MockDomainAuth-Info.plist */,
+				46C1A5C943646779BA99E64E /* UserRepository-Info.plist */,
+				C46430FC5EF5ACE330921AF0 /* UserRepositoryInterface-Info.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		F9BA681B2D19E0B9128CEA78 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F321A78ADD197398171E0D0D /* SignInFailedView.swift */,
+				9362841FDBFC80714BD96004 /* SignInView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		006DD1789BA53D9BED021B8B /* MockDomainAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1362267E1FC64B746B62E3A0 /* Build configuration list for PBXNativeTarget "MockDomainAuth" */;
+			buildPhases = (
+				9B3364D8EE81FF2F16A34459 /* Sources */,
+				52CB8CA6BECB76A486246783 /* Resources */,
+				C2985E037C214053D977B644 /* Embed Frameworks */,
+				6C1566E6083621A7A56D3D7B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				141B652D928A6644089A0AA8 /* PBXTargetDependency */,
+			);
+			name = MockDomainAuth;
+			productName = MockDomainAuth;
+			productReference = 1A4D1F1D93DD635B543CABF8 /* MockDomainAuth.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		41403864F94C8C0005AC6A84 /* FeatureAuthExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E419C0B2C7937C24A76B7343 /* Build configuration list for PBXNativeTarget "FeatureAuthExample" */;
+			buildPhases = (
+				18A762E1738B307D13FC47BC /* Sources */,
+				23AA8910782B023E6B87D8F3 /* Resources */,
+				18DBEB8A70EF0F58BC9D0677 /* Embed Frameworks */,
+				2258BF7153EEE162532F7142 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60954F1F2A60696C661FE146 /* PBXTargetDependency */,
+				CBB8C045CC5E577A8EF764F0 /* PBXTargetDependency */,
+				6BD3003B1C24EE2C06D614D7 /* PBXTargetDependency */,
+			);
+			name = FeatureAuthExample;
+			productName = FeatureAuthExample;
+			productReference = 2D2A5A06BB67A583B7E1FF97 /* FeatureAuthExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F57854A68CFAE6B151C3F61 /* UserRepository */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCAA0360F808863194F8E5ED /* Build configuration list for PBXNativeTarget "UserRepository" */;
+			buildPhases = (
+				6183C83D3E7BF1E06287C4C0 /* Sources */,
+				308C6C015834A48816A92DB1 /* Resources */,
+				C570A703E2092116BC89BB83 /* Embed Frameworks */,
+				5C0D5ED4268786B80CB59EA3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1D63B5D585DEEDCA4557A3E /* PBXTargetDependency */,
+			);
+			name = UserRepository;
+			packageProductDependencies = (
+				070BB430795F281FFC78590E /* FirebaseFirestore */,
+			);
+			productName = UserRepository;
+			productReference = 26D1877520A597A4D0797877 /* UserRepository.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8DFFDA7195A8840337E31753 /* DomainAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE786C9FD96F11CAE375567C /* Build configuration list for PBXNativeTarget "DomainAuth" */;
+			buildPhases = (
+				F1528A5E4518AD569C4B39D8 /* Sources */,
+				6524F1EFDA076711214B7530 /* Resources */,
+				BC116C6FCCAABF758704C750 /* Embed Frameworks */,
+				9C398DD5C90864B3DB0E6D8A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF8638C93BB1316AD4421BA2 /* PBXTargetDependency */,
+				C2450811271F4BACAF6A85B5 /* PBXTargetDependency */,
+			);
+			name = DomainAuth;
+			productName = DomainAuth;
+			productReference = 6A228FDFD6904F50558D3155 /* DomainAuth.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A76A4F8564C5F80FA2BDBE75 /* FeatureAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B586D9A9A2E62C721D832B76 /* Build configuration list for PBXNativeTarget "FeatureAuth" */;
+			buildPhases = (
+				113D1E8DCBE021C459BE5666 /* Sources */,
+				79D9A3538ADE28D7B2DAC5CA /* Resources */,
+				9B578250DE5AE90CDD11BE12 /* Embed Frameworks */,
+				EAD363325BE067B15F9CC4EC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				070D826D5060695621A3BCDA /* PBXTargetDependency */,
+			);
+			name = FeatureAuth;
+			packageProductDependencies = (
+				15F996B4F2193A99D6BAB162 /* ComposableArchitecture */,
+			);
+			productName = FeatureAuth;
+			productReference = F4C2873D511E30B571D444A1 /* FeatureAuth.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F1C825BA5A5E8AA8717D0321 /* DomainAuthInterface */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F08ACA257D9AD69A3ED435F0 /* Build configuration list for PBXNativeTarget "DomainAuthInterface" */;
+			buildPhases = (
+				AB56D3E647DD6FD61E6937BA /* Sources */,
+				DD7039A9CEF23C3A939DD919 /* Resources */,
+				514C6376184CF3A153DAE0BB /* Embed Frameworks */,
+				15B8D9280DDE718AD71179E5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DomainAuthInterface;
+			productName = DomainAuthInterface;
+			productReference = 04CBCCCD93B2EBC9742A0BB3 /* DomainAuthInterface.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F72DBB58503589822D7F456A /* UserRepositoryInterface */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E881DF585C0D58386D4858 /* Build configuration list for PBXNativeTarget "UserRepositoryInterface" */;
+			buildPhases = (
+				FB85A1D8CF9DF5F415BAD53E /* Sources */,
+				BA0276033F14FC4AED915B98 /* Resources */,
+				F9637D83E2004B920419B451 /* Embed Frameworks */,
+				87DB306E0E4AF91D1414B5D6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UserRepositoryInterface;
+			productName = UserRepositoryInterface;
+			productReference = FB6C08153E4DF9145DB425B2 /* UserRepositoryInterface.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA40E33F324DE3832C84475C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = E08E145D977AF10EA5CBB2F4 /* Build configuration list for PBXProject "AuthApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 406E23D6D48BD72908620DC6;
+			packageReferences = (
+				910870AF2DEA9608C9533799 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				0D18B9534F41DE3B05703286 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
+			productRefGroup = B89736A4BF04CCE7EE911095 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A76A4F8564C5F80FA2BDBE75 /* FeatureAuth */,
+				8DFFDA7195A8840337E31753 /* DomainAuth */,
+				F1C825BA5A5E8AA8717D0321 /* DomainAuthInterface */,
+				5F57854A68CFAE6B151C3F61 /* UserRepository */,
+				F72DBB58503589822D7F456A /* UserRepositoryInterface */,
+				006DD1789BA53D9BED021B8B /* MockDomainAuth */,
+				41403864F94C8C0005AC6A84 /* FeatureAuthExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23AA8910782B023E6B87D8F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308C6C015834A48816A92DB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CB8CA6BECB76A486246783 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6524F1EFDA076711214B7530 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79D9A3538ADE28D7B2DAC5CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA0276033F14FC4AED915B98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7039A9CEF23C3A939DD919 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		113D1E8DCBE021C459BE5666 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC38797BE45FC1CEAECBD06 /* FeatureAuth.swift in Sources */,
+				9C007679BE2C0AA6C49D64CB /* SignInFailedView.swift in Sources */,
+				98E948762FF968F2291B5E7F /* SignInView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A762E1738B307D13FC47BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51112C54BD9EC6A59D6947A0 /* ExampleView.swift in Sources */,
+				249F37713BC2F50CFFE53CDE /* FeatureAuthExample.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6183C83D3E7BF1E06287C4C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B3364D8EE81FF2F16A34459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5591D36C0480949B17A68B9E /* MockDomainAuth.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB56D3E647DD6FD61E6937BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F7564386EB7D536C40B1C33 /* DomainAuthInterface.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1528A5E4518AD569C4B39D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06291DB5CB07EB9B6B949196 /* DomainAuth.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB85A1D8CF9DF5F415BAD53E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		070D826D5060695621A3BCDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DomainAuthInterface;
+			target = F1C825BA5A5E8AA8717D0321 /* DomainAuthInterface */;
+			targetProxy = 57F02DC98BD2E8C3B54A7A08 /* PBXContainerItemProxy */;
+		};
+		141B652D928A6644089A0AA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DomainAuthInterface;
+			target = F1C825BA5A5E8AA8717D0321 /* DomainAuthInterface */;
+			targetProxy = 336A52CBF8FDDD8BBB0D90F3 /* PBXContainerItemProxy */;
+		};
+		60954F1F2A60696C661FE146 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DomainAuthInterface;
+			target = F1C825BA5A5E8AA8717D0321 /* DomainAuthInterface */;
+			targetProxy = D8CAD2D84FFFD31965078743 /* PBXContainerItemProxy */;
+		};
+		6BD3003B1C24EE2C06D614D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MockDomainAuth;
+			target = 006DD1789BA53D9BED021B8B /* MockDomainAuth */;
+			targetProxy = 3E3A4971B666823954BD52D5 /* PBXContainerItemProxy */;
+		};
+		C1D63B5D585DEEDCA4557A3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UserRepositoryInterface;
+			target = F72DBB58503589822D7F456A /* UserRepositoryInterface */;
+			targetProxy = 12F7A3E39820807D9124786C /* PBXContainerItemProxy */;
+		};
+		C2450811271F4BACAF6A85B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UserRepositoryInterface;
+			target = F72DBB58503589822D7F456A /* UserRepositoryInterface */;
+			targetProxy = 34385C6B58D03D7713B2E234 /* PBXContainerItemProxy */;
+		};
+		CBB8C045CC5E577A8EF764F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FeatureAuth;
+			target = A76A4F8564C5F80FA2BDBE75 /* FeatureAuth */;
+			targetProxy = E9313B9F319E093398C25528 /* PBXContainerItemProxy */;
+		};
+		DF8638C93BB1316AD4421BA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DomainAuthInterface;
+			target = F1C825BA5A5E8AA8717D0321 /* DomainAuthInterface */;
+			targetProxy = 9A312EFABDF75BA42EA349D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		001F706DEBF4229FF484BC0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/DomainAuthInterface-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcraft.domainauthinterface;
+				PRODUCT_NAME = DomainAuthInterface;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0243E32DECB3820C38032416 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/UserRepository-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcraft.userrepository;
+				PRODUCT_NAME = UserRepository;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0DE44ECCBECD9FF9BCAF934A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Sources/Example/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcraft.featureauthexample;
+				PRODUCT_NAME = FeatureAuthExample;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		103547A106E59439E4C0F7AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Sources/Example/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcraft.featureauthexample;
+				PRODUCT_NAME = FeatureAuthExample;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1516B516F700D3556958AC88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/DomainAuth-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcraft.domainauth;
+				PRODUCT_NAME = DomainAuth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		46FEEE9D870CEF4CD75A1F48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		681F48E6EAD86E1F34F960BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9066336E8F1BF29E469C1860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/MockDomainAuth-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcraft.mockdomainauth;
+				PRODUCT_NAME = MockDomainAuth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9737BAEB16F1F419E4958A05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/UserRepositoryInterface-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcraft.userrepositoryinterface;
+				PRODUCT_NAME = UserRepositoryInterface;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B04AF158FC4B9D36D2160C23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/UserRepository-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcraft.userrepository;
+				PRODUCT_NAME = UserRepository;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B2D7A231F5025B0BB7840391 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/DomainAuthInterface-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcraft.domainauthinterface;
+				PRODUCT_NAME = DomainAuthInterface;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B8DEFC90D4644B6F3EA5327D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/DomainAuth-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcraft.domainauth;
+				PRODUCT_NAME = DomainAuth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D528A9308AAC3ED374BE1D42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/MockDomainAuth-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcraft.mockdomainauth;
+				PRODUCT_NAME = MockDomainAuth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E65B9D918B1FF6D488647F05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/UserRepositoryInterface-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcraft.userrepositoryinterface;
+				PRODUCT_NAME = UserRepositoryInterface;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F26F8481C6ADB4B6F3DB9390 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/FeatureAuth-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcraft.featureauth;
+				PRODUCT_NAME = FeatureAuth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FE9302AF5DA4762C01FE7A11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/FeatureAuth-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcraft.featureauth;
+				PRODUCT_NAME = FeatureAuth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1362267E1FC64B746B62E3A0 /* Build configuration list for PBXNativeTarget "MockDomainAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9066336E8F1BF29E469C1860 /* Debug */,
+				D528A9308AAC3ED374BE1D42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E881DF585C0D58386D4858 /* Build configuration list for PBXNativeTarget "UserRepositoryInterface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E65B9D918B1FF6D488647F05 /* Debug */,
+				9737BAEB16F1F419E4958A05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B586D9A9A2E62C721D832B76 /* Build configuration list for PBXNativeTarget "FeatureAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE9302AF5DA4762C01FE7A11 /* Debug */,
+				F26F8481C6ADB4B6F3DB9390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCAA0360F808863194F8E5ED /* Build configuration list for PBXNativeTarget "UserRepository" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0243E32DECB3820C38032416 /* Debug */,
+				B04AF158FC4B9D36D2160C23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE786C9FD96F11CAE375567C /* Build configuration list for PBXNativeTarget "DomainAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8DEFC90D4644B6F3EA5327D /* Debug */,
+				1516B516F700D3556958AC88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E08E145D977AF10EA5CBB2F4 /* Build configuration list for PBXProject "AuthApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46FEEE9D870CEF4CD75A1F48 /* Debug */,
+				681F48E6EAD86E1F34F960BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E419C0B2C7937C24A76B7343 /* Build configuration list for PBXNativeTarget "FeatureAuthExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DE44ECCBECD9FF9BCAF934A /* Debug */,
+				103547A106E59439E4C0F7AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F08ACA257D9AD69A3ED435F0 /* Build configuration list for PBXNativeTarget "DomainAuthInterface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001F706DEBF4229FF484BC0E /* Debug */,
+				B2D7A231F5025B0BB7840391 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0D18B9534F41DE3B05703286 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.0;
+			};
+		};
+		910870AF2DEA9608C9533799 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		070BB430795F281FFC78590E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseFirestore;
+		};
+		15F996B4F2193A99D6BAB162 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BA40E33F324DE3832C84475C /* Project object */;
+}

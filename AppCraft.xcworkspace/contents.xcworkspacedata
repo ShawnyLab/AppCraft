@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <FileRef
-      location = "group:AppCraft.xcodeproj">
-   </FileRef>
+   <Group
+      location = "group:Projects"
+      name = "Projects">
+      <FileRef
+         location = "group:AuthApp/AuthApp.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:BoardApp/BoardApp.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:CompApp/CompApp.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Core/Core.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:MainApp/MainApp.xcodeproj">
+      </FileRef>
+   </Group>
 </Workspace>
