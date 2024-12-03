@@ -7,8 +7,10 @@
 
 import SwiftUI
 import FeatureAuth
+import MockDomainAuth
 
 struct ExampleView: View {
+    static let mockAuth = MockDomainAuth()
     
     var body: some View {
         NavigationStack {
@@ -17,7 +19,7 @@ struct ExampleView: View {
                     .font(.title)
                 
                 NavigationLink {
-                    SignInView()
+                    SignInView(domainAuth: ExampleView.mockAuth)
                         
                 } label: {
                     HStack {
@@ -32,7 +34,7 @@ struct ExampleView: View {
                 }
 
                 NavigationLink {
-                    SignInView()
+                    SignInView(domainAuth: ExampleView.mockAuth)
                 } label: {
                     HStack {
                         Text("구글 로그인 성공")
@@ -60,7 +62,7 @@ struct ExampleView: View {
                 }
                 
                 NavigationLink {
-                    SignInView()
+                    SignInView(domainAuth: ExampleView.mockAuth)
                 } label: {
                     HStack {
                         Text("애플 로그인 성공")

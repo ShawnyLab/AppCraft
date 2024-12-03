@@ -7,18 +7,26 @@
 
 import SwiftUI
 import Shared
-import CoreUI
+import AppCraftCoreUI
 import ComposableArchitecture
+import DomainCompInterface
 
 public struct CompListView: View {
     @State private var showCreateCompView = false
     
     private let store: StoreOf<FeatureComp>
+    private let domain: DomainCompInterface
     
     private var index = 0
     
-    public init(store: StoreOf<FeatureComp>) {
-        self.store = store
+    public init(domainComp: DomainCompInterface) {
+        self.store = Store(
+            initialState: FeatureComp.State(), reducer: {
+                FeatureComp(domainComp: domainComp)
+            }
+        )
+        
+        self.domain = domainComp
     }
 
     public var body: some View {
@@ -57,7 +65,7 @@ public struct CompListView: View {
                         showCreateCompView = true
                     } label: {
                         VStack {
-                            CoreUIAsset.icPlusWhite.swiftUIImage
+                            AppCraftCoreUIAsset.icPlusWhite.swiftUIImage
                             
                             Text("Create One")
                                 .font(ACFont.custom(13))
@@ -78,26 +86,27 @@ public struct CompListView: View {
             }
             .foregroundStyle(Color.white)
             .sheet(isPresented: $showCreateCompView) {
-                let store = Store(
-                    initialState: FeatureCreateComp.State()
-                ) {
-                    FeatureCreateComp()
-                }
-                
-                CreateCompView(store: store)
+                CreateCompView(store: Store(
+                    initialState: FeatureCreateComp.State(), reducer: {
+                        FeatureCreateComp(domainComp: domain)
+                    }
+                ))
+            }
+            .onAppear {
+                viewStore.send(.fetchComps)
             }
         }
 
     }
 }
 
-#Preview {
-    CompListView(
-        store: Store(
-            initialState: FeatureComp.State()
-        ) {
-            FeatureComp()
-        }
-    )
-    .background(Color.black)
-}
+//#Preview {
+//    CompListView(
+//        store: Store(
+//            initialState: FeatureComp.State()
+//        ) {
+//            FeatureComp()
+//        }
+//    )
+//    .background(Color.black)
+//}

@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import CoreUI
+import AppCraftCoreUI
 import AuthenticationServices
 
 public struct SignInFailedView: View {
@@ -50,7 +50,7 @@ public struct SignInFailedView: View {
             .padding(.vertical, 40)
             .padding(.bottom, 20)
             
-            CoreUIAsset
+            AppCraftCoreUIAsset
                 .googleSignin
                 .swiftUIImage
                 .resizable()

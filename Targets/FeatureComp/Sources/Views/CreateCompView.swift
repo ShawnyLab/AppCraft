@@ -7,7 +7,7 @@
 
 import SwiftUI
 import Shared
-import CoreUI
+import AppCraftCoreUI
 import ComposableArchitecture
 
 public struct CreateCompView: View {
@@ -62,7 +62,7 @@ public struct CreateCompView: View {
                         send: FeatureCreateComp.Action.updateSelectedRow
                     )
                 )
-                .padding(50)
+                .padding(30)
                 .background {
                     ACColor.darkGray
                         .clipShape(RoundedRectangle(cornerRadius: 12))
@@ -74,6 +74,26 @@ public struct CreateCompView: View {
                         )
                 }
                 .padding(50)
+                
+                Spacer()
+                
+                Button {
+                    
+                } label: {
+                    HStack {
+                        Text("Done")
+                            .font(ACFont.custom(24, weight: .bold))
+                        
+                        AppCraftCoreUIAsset
+                            .icCompBlack
+                            .swiftUIImage
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 20)
+                    }
+                    .opacity(viewStore.isSaveable ? 1 : 0.3)
+                }
+                .disabled(!viewStore.isSaveable)
                 
                 Spacer()
             }
@@ -111,12 +131,12 @@ public struct CreateCompView: View {
     }
 }
 
-#Preview {
-    CreateCompView(
-        store: Store(
-            initialState: FeatureCreateComp.State()
-        ) {
-            FeatureCreateComp()
-        }
-    )
-}
+//#Preview {
+//    CreateCompView(
+//        store: Store(
+//            initialState: FeatureCreateComp.State()
+//        ) {
+//            FeatureCreateComp()
+//        }
+//    )
+//}

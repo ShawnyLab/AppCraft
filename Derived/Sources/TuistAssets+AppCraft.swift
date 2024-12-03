@@ -29,6 +29,7 @@ public enum AppCraftAsset {
   public static let red = AppCraftColors(name: "Red")
   public static let icBoardBlack = AppCraftImages(name: "ic_board_black")
   public static let icBoardWhite = AppCraftImages(name: "ic_board_white")
+  public static let icCompBlack = AppCraftImages(name: "ic_comp_black")
   public static let icCompWhite = AppCraftImages(name: "ic_comp_white")
   public static let icDividerWhite = AppCraftImages(name: "ic_divider_white")
   public static let icGridWhite = AppCraftImages(name: "ic_grid_white")

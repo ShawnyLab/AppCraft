@@ -6,17 +6,19 @@
 //
 
 import SwiftUI
-import CoreUI
+import AppCraftCoreUI
 import ComposableArchitecture
 import AuthenticationServices
+import DomainAuthInterface
 
 public struct SignInView: View {
     private let store: StoreOf<FeatureAuth>
     
-    public init(store: StoreOf<FeatureAuth> = Store(initialState: FeatureAuth.State()) {
-        FeatureAuth()
-    }) {
-        self.store = store
+    public init(domainAuth: DomainAuthInterface) {
+        let featureAuth = FeatureAuth(auth: domainAuth)
+        self.store = Store(initialState: FeatureAuth.State(), reducer: {
+            featureAuth
+        })
     }
     
     public var body: some View {
@@ -32,7 +34,7 @@ public struct SignInView: View {
                     Spacer()
                 }
 
-                CoreUIAsset
+                AppCraftCoreUIAsset
                     .guideLogo
                     .swiftUIImage
                     .resizable()
@@ -41,7 +43,7 @@ public struct SignInView: View {
                     .padding(.vertical, 40)
                     .padding(.bottom, 20)
                 
-                CoreUIAsset
+                AppCraftCoreUIAsset
                     .googleSignin
                     .swiftUIImage
                     .resizable()
@@ -66,9 +68,6 @@ public struct SignInView: View {
                 Spacer()
             }
             .padding()
-            .onAppear {
-                viewStore.send(.checkAuthenticationStatus)
-            }
             .background(Color.white)
         }
     }

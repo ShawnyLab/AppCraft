@@ -6,10 +6,9 @@
 //
 
 import SwiftUI
-import FeatureAuth
 
 @main
-struct AppCraftApp: App {
+struct FeatureAuthExample: App {
     
     var body: some Scene {
         WindowGroup {

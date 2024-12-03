@@ -20,6 +20,20 @@
                ReferencedContainer = "container:AppCraft.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "504695F645B72F2FFCE23182"
+               BuildableName = "DomainBoardInterface.framework"
+               BlueprintName = "DomainBoardInterface"
+               ReferencedContainer = "container:AppCraft.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

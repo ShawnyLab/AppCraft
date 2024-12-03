@@ -8,18 +8,22 @@
 import Foundation
 import ComposableArchitecture
 import Shared
-import DomainComp
+import DomainCompInterface
 
 @Reducer
 public struct FeatureCreateComp {
+    private let domainComp: DomainCompInterface
     
-    public init() { }
+    public init(domainComp: DomainCompInterface) {
+        self.domainComp = domainComp
+    }
     
     public struct State: Equatable {
         public var cores: [any ACCoreType]
         public var showCoreOptions: Bool
         public var coreAddingPosition: CoreAddingPosition?
         public var selectedRowId: UUID?
+        public var isSaveable: Bool
         public var isSaving: Bool
         public var componentName: String
         public var error: String?
@@ -29,6 +33,7 @@ public struct FeatureCreateComp {
             self.showCoreOptions = false
             self.coreAddingPosition = nil
             self.selectedRowId = nil
+            self.isSaveable = false
             self.isSaving = false
             self.componentName = ""
             self.error = nil
@@ -103,6 +108,7 @@ public struct FeatureCreateComp {
                     column.cores.append(ACRow(cores: [core]))
                 }
                 
+                state.isSaveable = true
                 state.cores[0] = column
                 state.showCoreOptions = false
                 state.coreAddingPosition = nil
@@ -137,14 +143,14 @@ public struct FeatureCreateComp {
                 state.error = nil
                 
                 let comp = Comp(
-                    id: UUID(),
+                    id: UUID().uuidString,
                     name: state.componentName.isEmpty ? "New Component" : state.componentName,
                     thumbnail: state.cores
                 )
                 
                 return .run { [comp] send in
                     do {
-//                        try await dependencies.domainComp.saveComp(comp)
+                        try await domainComp.saveComp(comp)
                         await send(.saveResponse(.success(comp)))
                     } catch {
                         await send(.saveResponse(.failure(error)))

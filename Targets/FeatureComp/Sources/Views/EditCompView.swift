@@ -7,7 +7,7 @@
 
 import SwiftUI
 import Shared
-import CoreUI
+import AppCraftCoreUI
 
 struct EditCompView: View {
     var cores: [any ACCoreType]
@@ -23,7 +23,9 @@ struct EditCompView: View {
                 selectedRowId = nil
             }
         } label: {
-            CoreUIAsset.plusCircleWhite.swiftUIImage
+            AppCraftCoreUIAsset
+                .plusCircleWhite
+                .swiftUIImage
                 .resizable()
                 .frame(width: 30, height: 30)
         }
@@ -38,7 +40,7 @@ struct EditCompView: View {
                 selectedRowId = row.id
             }
         } label: {
-            CoreUIAsset.plusCircleWhite.swiftUIImage
+            AppCraftCoreUIAsset.plusCircleWhite.swiftUIImage
                 .resizable()
                 .frame(width: 30, height: 30)
         }
@@ -68,9 +70,12 @@ struct EditCompView: View {
     private func renderCore(_ core: any ACCoreType) -> some View {
         if let core = core as? ACText {
             Text(core.content)
+                .font(ACFont.custom(12))
         } else if let core = core as? ACBox {
             if let color = core.color {
-                Color.black
+                AppCraftCoreUIAsset
+                    .gray3
+                    .swiftUIColor
                     .frame(width: CGFloat(core.width ?? 0) < 0 ? .infinity : CGFloat(core.width ?? 0),
                            height: CGFloat(core.height ?? 0) < 0 ? .infinity : CGFloat(core.height ?? 0))
             } else {
@@ -80,15 +85,25 @@ struct EditCompView: View {
             }
         } else if let core = core as? ACRow {
             HStack {
-                createRowAddButton(position: .left, row: core)
-                renderCores(core.cores, isRow: true)
-                createRowAddButton(position: .right, row: core)
+                if core.cores.count < 3 {
+                    createRowAddButton(position: .left, row: core)
+                    renderCores(core.cores, isRow: true)
+                    createRowAddButton(position: .right, row: core)
+                } else {
+                    renderCores(core.cores, isRow: true)
+                }
             }
         } else if let core = core as? ACColumn {
             VStack {
                 renderCores(core.cores)
                 addButton
             }
+        } else if let core = core as? ACImage {
+            AppCraftCoreUIAsset
+                .gray3
+                .swiftUIColor
+                .frame(width: 80, height: 80)
+                .clipShape(RoundedRectangle(cornerRadius: 12))
         }
     }
     
@@ -96,21 +111,5 @@ struct EditCompView: View {
         if !cores.isEmpty {
             renderCores(cores)
         }
-    }
-}
-
-#Preview {
-    ZStack {
-        Color.gray
-            .ignoresSafeArea()
-        EditCompView(cores: [
-            ACColumn(cores: [
-                ACRow(cores: [ACText(content: "Test"), ACText(content: "Test1")]),
-                ACRow(cores: [ACText(content: "Test2"), ACText(content: "Test3")])
-            ])
-        ], showCoreOptions: .constant(false),
-           coreAddingPosition: .constant(nil),
-           selectedRowId: .constant(nil))
-        .foregroundStyle(Color.white)
     }
 }

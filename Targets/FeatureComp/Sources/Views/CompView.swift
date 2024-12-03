@@ -7,19 +7,24 @@
 
 import SwiftUI
 import Shared
-import CoreUI
+import AppCraftCoreUI
 
-struct CompView: View {
+public struct CompView: View {
     var width: CGFloat = 160
     var comp: any CompType
     
-    var body: some View {
+    public init(width: CGFloat = 160, comp: any CompType) {
+        self.width = width
+        self.comp = comp
+    }
+
+    public var body: some View {
         VStack {
             ACColor.darkGray
                 .clipShape(RoundedRectangle(cornerRadius: 12))
                 .frame(width: width, height: width)
                 .overlay(alignment: .topLeading) {
-                    CoreUIAsset
+                    AppCraftCoreUIAsset
                         .icCompWhite
                         .swiftUIImage
                         .resizable()
@@ -51,17 +56,17 @@ struct CompView: View {
     }
 }
 
-#Preview {
-    CompView(comp: Comp(name: "Test",
-                        thumbnail: [
-                            ACColumn(cores: [
-                                ACBox(width: -1, height: 30, color: "000000"),
-                                ACRow(cores: [
-                                    ACBox(width: -1, height: 20, color: "000000"),
-                                    ACBox(width: 30, height: 20)
-                                ])
-                            ])
-                        ]
-                       )
-    )
-}
+//#Preview {
+//    CompView(comp: Comp(name: "Test",
+//                        thumbnail: [
+//                            ACColumn(cores: [
+//                                ACBox(width: -1, height: 30, color: "000000"),
+//                                ACRow(cores: [
+//                                    ACBox(width: -1, height: 20, color: "000000"),
+//                                    ACBox(width: 30, height: 20)
+//                                ])
+//                            ])
+//                        ]
+//                       )
+//    )
+//}

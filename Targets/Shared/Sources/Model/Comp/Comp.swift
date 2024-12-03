@@ -8,11 +8,13 @@
 import Foundation
 
 public struct Comp: CompType {
+    public static let path = "comps"
+    
     public static func == (lhs: Comp, rhs: Comp) -> Bool {
         lhs.id == rhs.id
     }
     
-    public var id: UUID
+    public var id: String
     public var name: String
     
     public var _thumbnail: [ACCoreTypeWrapper]
@@ -35,7 +37,7 @@ public struct Comp: CompType {
         }
     }
      
-    public init(id: UUID = UUID(), name: String, thumbnail: [any ACCoreType] = [], cores: [any ACCoreType] = []) {
+    public init(id: String = UUID().uuidString, name: String, thumbnail: [any ACCoreType] = [], cores: [any ACCoreType] = []) {
         self.id = id
         self.name = name
         self._cores = (try? cores.map { try ACCoreTypeWrapper(core: $0) }) ?? []
@@ -49,7 +51,7 @@ public struct Comp: CompType {
     
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        id = try container.decode(UUID.self, forKey: .id)
+        id = try container.decode(String.self, forKey: .id)
         name = try container.decode(String.self, forKey: .name)
         _cores = try container.decode([ACCoreTypeWrapper].self, forKey: .cores)
         _thumbnail = try container.decode([ACCoreTypeWrapper].self, forKey: .thumbnail)
@@ -61,5 +63,39 @@ public struct Comp: CompType {
         try container.encode(name, forKey: .name)
         try container.encode(_thumbnail, forKey: .thumbnail)
         try container.encode(_cores, forKey: .cores)
+    }
+}
+
+extension Comp {
+    public static var mock: Comp {
+        Comp(name: "My Test Comp", thumbnail: [
+            ACColumn(cores: [
+                ACRow(cores: [
+                    ACBox(width: -1, height: 10, color: "000000")
+                ]),
+                ACRow(cores: [
+                    ACBox(width: -1, height: 10, color: "000000"),
+                    ACBox(width: 50, height: 10)
+                ]),
+                ACRow(cores: [
+                    ACBox(width: -1, height: 10, color: "000000"),
+                    ACBox(width: 80, height: 10)
+                ]),
+            ])
+        ], cores: [
+            ACColumn(cores: [
+                ACRow(cores: [
+                    ACBox(width: -1, height: 10, color: "000000")
+                ]),
+                ACRow(cores: [
+                    ACBox(width: -1, height: 10, color: "000000"),
+                    ACBox(width: 50, height: 10)
+                ]),
+                ACRow(cores: [
+                    ACBox(width: -1, height: 10, color: "000000"),
+                    ACBox(width: 80, height: 10)
+                ]),
+            ])
+        ])
     }
 }

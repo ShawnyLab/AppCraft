@@ -7,14 +7,14 @@
 
 import Foundation
 import ComposableArchitecture
-import DomainAuth
-import Shared
+import DomainAuthInterface
+@preconcurrency import Shared
 
 @Reducer
 public struct FeatureAuth {
-    private let auth: DomainAuth
+    private let auth: DomainAuthInterface
     
-    public init(auth: DomainAuth = TestDomainAuth()) {
+    public init(auth: DomainAuthInterface) {
         self.auth = auth
     }
     
@@ -27,7 +27,7 @@ public struct FeatureAuth {
         public var email: String
         public var password: String
         public var isAuthenticated: Bool
-        public var currentUser: UserSession?
+        public var currentUser: ACAccount?
         public var isLoading: Bool
         public var error: AuthError?
         
@@ -36,7 +36,7 @@ public struct FeatureAuth {
             email: String = "",
             password: String = "",
             isAuthenticated: Bool = false,
-            currentUser: UserSession? = nil,
+            currentUser: ACAccount? = nil,
             isLoading: Bool = false,
             error: AuthError? = nil
         ) {
@@ -52,13 +52,9 @@ public struct FeatureAuth {
 
     public enum Action: Equatable {
         case signIn
-        case signInResponse(TaskResult<UserSession>)
+        case signInResponse(TaskResult<ACAccount>)
         case signOut
         case signOutResponse(TaskResult<Void>)
-        case updateEmail(String)
-        case updatePassword(String)
-        case checkAuthenticationStatus
-        case authenticationStatusResponse(TaskResult<Bool>)
         case clearError
         
         public static func == (lhs: Action, rhs: Action) -> Bool {
@@ -67,17 +63,9 @@ public struct FeatureAuth {
                  (.signOut, .signOut),
                  (.clearError, .clearError):
                 return true
-            case let (.updateEmail(lEmail), .updateEmail(rEmail)):
-                return lEmail == rEmail
-            case let (.updatePassword(lPass), .updatePassword(rPass)):
-                return lPass == rPass
             case let (.signInResponse(lResult), .signInResponse(rResult)):
                 return compareTaskResults(lResult, rResult)
             case let (.signOutResponse(lResult), .signOutResponse(rResult)):
-                return true
-            case let (.authenticationStatusResponse(lResult), .authenticationStatusResponse(rResult)):
-                return compareTaskResults(lResult, rResult)
-            case (.checkAuthenticationStatus, .checkAuthenticationStatus):
                 return true
             default:
                 return false
@@ -144,49 +132,11 @@ public struct FeatureAuth {
                 state.isLoading = false
                 state.error = error as? AuthError ?? .unknown
                 return .none
-                
-            case let .updateEmail(email):
-                state.email = email
-                return .none
-                
-            case let .updatePassword(password):
-                state.password = password
-                return .none
-                
-            case .checkAuthenticationStatus:
-                return .run { send in
-                    do {
-                        let isAuthenticated = await auth.isAuthenticated
-                        await send(.authenticationStatusResponse(.success(isAuthenticated)))
-                    } catch {
-                        await send(.authenticationStatusResponse(.failure(error)))
-                    }
-                }
-                
-            case let .authenticationStatusResponse(.success(isAuthenticated)):
-                state.isAuthenticated = isAuthenticated
-                return .none
-                
-            case let .authenticationStatusResponse(.failure(error)):
-                state.error = error as? AuthError ?? .unknown
-                return .none
-                
+
             case .clearError:
                 state.error = nil
                 return .none
             }
         }
-    }
-}
-
-// MARK: - Preview Helper
-extension FeatureAuth {
-    static var preview: FeatureAuth {
-        let testAuth = TestDomainAuth()
-        let previewUser = TestDomainAuth.createMockUserSession(
-            permissions: [.read, .write]
-        )
-        testAuth.setMockUser(previewUser)
-        return FeatureAuth(auth: testAuth)
     }
 }

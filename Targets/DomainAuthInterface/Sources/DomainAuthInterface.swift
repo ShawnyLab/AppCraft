@@ -7,15 +7,10 @@
 
 import Foundation
 import Shared
+import CoreService
 
 public protocol DomainAuthInterface {
-    
-    var currentUser: UserSession? { get async throws }
-    var isAuthenticated: Bool { get async }
-    
-    func signIn(email: String, password: String) async throws -> UserSession
+    var currentUser: UserSession? { get }
+    func signIn(email: String, password: String) async throws -> ACAccount
     func signOut() async throws
-    func validatePermissions(for action: AuthorizedAction) async throws -> Bool
-    func getAuthenticatedUserID() async throws -> String
-    func requireAuthentication() async throws
 }

@@ -7,16 +7,20 @@
 
 import Foundation
 
-public struct UserSession: Equatable {
+public struct UserSession: DatabaseFetchableType {
+    public static let path = "users"
+    
     public let id: String
     public let email: String
     public let displayName: String?
-    public let permissions: Set<Permission>
+    public let imageUrl: String?
+    public let method: SignInMethod
     
-    public init(id: String, email: String, displayName: String?, permissions: Set<Permission>) {
+    public init(id: String, email: String, displayName: String?, imageUrl: String?, method: SignInMethod) {
         self.id = id
         self.email = email
         self.displayName = displayName
-        self.permissions = permissions
+        self.imageUrl = imageUrl
+        self.method = method
     }
 }

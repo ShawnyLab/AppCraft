@@ -20,6 +20,20 @@
                ReferencedContainer = "container:AppCraft.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F93E62BE33443B5C4EBA0DAE"
+               BuildableName = "DomainAuthInterface.framework"
+               BlueprintName = "DomainAuthInterface"
+               ReferencedContainer = "container:AppCraft.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

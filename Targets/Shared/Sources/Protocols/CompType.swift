@@ -6,8 +6,8 @@
 
 import Foundation
 
-public protocol CompType: Identifiable, Equatable, Codable {
-    var id: UUID { get }
+public protocol CompType: DatabaseFetchableType {
+    var id: String { get }
     var name: String { get }
     var thumbnail: [any ACCoreType] { get }
     var cores: [any ACCoreType] { get }
