@@ -43,20 +43,66 @@ public struct SignInView: View {
                     .padding(.vertical, 40)
                     .padding(.bottom, 20)
                 
-                AppCraftCoreUIAsset
-                    .googleSignin
-                    .swiftUIImage
-                    .resizable()
-                    .scaledToFit()
-                    .padding(.horizontal, 50)
-                
-                SignInWithAppleButton { request in
-                    //TODO: signin
-                } onCompletion: { result in
+                Button {
                     
+                } label: {
+                    HStack {
+                        AppCraftCoreUIAsset
+                            .icGoogle
+                            .swiftUIImage
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 20, height: 20)
+                        
+                        Spacer()
+                        
+                        Text("Sign in with Google")
+                            .font(ACFont.custom(18))
+                            .opacity(0.8)
+                        
+                        Spacer()
+                        
+                        Color.clear
+                            .frame(width: 20, height: 20)
+                    }
+                    .padding(.horizontal)
+                    .frame(height: 48)
+                    .background(
+                        Color.black
+                    )
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
                 }
-                .scaledToFit()
-                .padding(.horizontal, 50)
+                .padding(.horizontal, 40)
+                
+                Button {
+                    
+                } label: {
+                    HStack {
+                        AppCraftCoreUIAsset
+                            .icApple
+                            .swiftUIImage
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 20, height: 20)
+                        
+                        Spacer()
+                        
+                        Text("Sign in with Apple")
+                            .font(ACFont.custom(18))
+                            .opacity(0.8)
+                        
+                        Spacer()
+                        
+                        Color.clear
+                            .frame(width: 20, height: 20)
+                    }
+                    .padding(.horizontal)
+                    .frame(height: 48)
+                    .background(Color.black)
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                }
+                .padding(.horizontal, 40)
+                .padding(.top, 10)
                 
                 // Error Message
                 if let error = viewStore.error {
@@ -68,6 +114,7 @@ public struct SignInView: View {
                 Spacer()
             }
             .padding()
+            .foregroundStyle(Color.white)
             .background(Color.white)
         }
     }

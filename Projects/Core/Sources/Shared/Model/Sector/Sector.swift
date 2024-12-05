@@ -17,10 +17,10 @@ public struct Sector: SectorType {
     }
     
     private var _cores: [ACCoreTypeWrapper]
-    public var id: UUID
+    public var id: String
     
     public init(id: UUID = UUID(), cores: [any ACCoreType]) {
-        self.id = id
+        self.id = id.uuidString
         self._cores = (try? cores.map { try ACCoreTypeWrapper(core: $0) }) ?? []
     }
     
@@ -36,7 +36,7 @@ extension Sector: Codable {
     
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        id = try container.decode(UUID.self, forKey: .id)
+        id = try container.decode(String.self, forKey: .id)
         _cores = try container.decode([ACCoreTypeWrapper].self, forKey: .cores)
     }
     

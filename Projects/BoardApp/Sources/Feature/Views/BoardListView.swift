@@ -9,13 +9,15 @@ import SwiftUI
 import ComposableArchitecture
 import DomainBoardInterface
 import AppCraftCoreUI
+import Shared
 
 public struct BoardListView: View {
     private let store: StoreOf<FeatureBoard>
+    @State private var showCreateBoardView = false
 
-    public init(domain: DomainBoardInterface) {
+    public init(domain: DomainBoardInterface, userID: String?) {
         self.store = Store(initialState: FeatureBoard.State(), reducer: {
-            FeatureBoard(domainBoard: domain)
+            FeatureBoard(domainBoard: domain, userID: userID ?? "")
         })
     }
     
@@ -23,8 +25,10 @@ public struct BoardListView: View {
         WithViewStore(store, observe: { $0 }) { viewStore in
             VStack {
                 if viewStore.boards.isEmpty {
+                    Spacer()
+                    
                     Button {
-                        
+                        showCreateBoardView = true
                     } label: {
                         AppCraftCoreUIAsset
                             .darkGray
@@ -56,7 +60,8 @@ public struct BoardListView: View {
 
                             }
                     }
-
+                    
+                    Spacer()
                 } else {
                     LazyVGrid(columns: [GridItem(spacing: 12), GridItem(spacing: 12)]) {
                         ForEach(viewStore.boards) { board in
@@ -68,6 +73,11 @@ public struct BoardListView: View {
             }
             .onAppear {
                 viewStore.send(.onAppear)
+            }
+            .fullScreenCover(isPresented: $showCreateBoardView) {
+                BoardView(store: Store(initialState: FeatureCreateBoard.State(), reducer: {
+                    FeatureCreateBoard()
+                }))
             }
         }
     }

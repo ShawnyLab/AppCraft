@@ -20,13 +20,15 @@
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 public enum AppCraftCoreUIAsset {
-  public static let googleSignin = AppCraftCoreUIImages(name: "google_signin")
+  public static let icApple = AppCraftCoreUIImages(name: "ic_apple")
+  public static let icGoogle = AppCraftCoreUIImages(name: "ic_google")
   public static let blue = AppCraftCoreUIColors(name: "Blue")
   public static let darkGray = AppCraftCoreUIColors(name: "DarkGray")
   public static let gray1 = AppCraftCoreUIColors(name: "Gray1")
   public static let gray2 = AppCraftCoreUIColors(name: "Gray2")
   public static let gray3 = AppCraftCoreUIColors(name: "Gray3")
   public static let red = AppCraftCoreUIColors(name: "Red")
+  public static let icAppBlack = AppCraftCoreUIImages(name: "ic_app_black")
   public static let icBoardBlack = AppCraftCoreUIImages(name: "ic_board_black")
   public static let icBoardWhite = AppCraftCoreUIImages(name: "ic_board_white")
   public static let icCompBlack = AppCraftCoreUIImages(name: "ic_comp_black")
@@ -42,6 +44,7 @@ public enum AppCraftCoreUIAsset {
   public static let icPositionRightWhite = AppCraftCoreUIImages(name: "ic_position_right_white")
   public static let icSectorWhite = AppCraftCoreUIImages(name: "ic_sector_white")
   public static let icSectorWhite30 = AppCraftCoreUIImages(name: "ic_sector_white_30")
+  public static let icSocialBlack = AppCraftCoreUIImages(name: "ic_social_black")
   public static let icSpaceBlack = AppCraftCoreUIImages(name: "ic_space_black")
   public static let icSpaceWhite = AppCraftCoreUIImages(name: "ic_space_white")
   public static let icTextDividerWhite = AppCraftCoreUIImages(name: "ic_textDivider_white")

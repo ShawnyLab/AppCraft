@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6F0BF1019EB11538A05E4B2A"
-               BuildableName = "CoreService.framework"
-               BlueprintName = "CoreService"
+               BlueprintIdentifier = "47B99EABCA6440821A59EFB2"
+               BuildableName = "CoreAuth.framework"
+               BlueprintName = "CoreAuth"
                ReferencedContainer = "container:Core.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,9 +44,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6F0BF1019EB11538A05E4B2A"
-            BuildableName = "CoreService.framework"
-            BlueprintName = "CoreService"
+            BlueprintIdentifier = "47B99EABCA6440821A59EFB2"
+            BuildableName = "CoreAuth.framework"
+            BlueprintName = "CoreAuth"
             ReferencedContainer = "container:Core.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -60,9 +60,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6F0BF1019EB11538A05E4B2A"
-            BuildableName = "CoreService.framework"
-            BlueprintName = "CoreService"
+            BlueprintIdentifier = "47B99EABCA6440821A59EFB2"
+            BuildableName = "CoreAuth.framework"
+            BlueprintName = "CoreAuth"
             ReferencedContainer = "container:Core.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

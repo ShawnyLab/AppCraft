@@ -20,20 +20,6 @@
                ReferencedContainer = "container:BoardApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7D9C62E1180D4D06E17D9143"
-               BuildableName = "BoardRepositoryInterface.framework"
-               BlueprintName = "BoardRepositoryInterface"
-               ReferencedContainer = "container:BoardApp.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

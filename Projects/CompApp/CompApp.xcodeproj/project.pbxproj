@@ -3,50 +3,54 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		02CE6C618DC36E02EC7CF7FD /* FeatureCompExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCD5AE832129FC7E989D9B9 /* FeatureCompExample.swift */; };
 		05AC265D0D170C741D6F35AE /* MockDomainComp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B767D12909AA61C0587FCE3 /* MockDomainComp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		074FD617575C7610B8F272FA /* CoreService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3DEECAAD2C62DBC27EF1FCF /* CoreService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0E09F44B2A0A7BCF053D431B /* FeatureComp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C305BE4E1ACAB1C0D561D9 /* FeatureComp.swift */; };
-		1934E0722CFF275600CF1003 /* CompRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1934E0712CFF275600CF1003 /* CompRepositoryInterface.swift */; };
-		1934E0732CFF275600CF1003 /* CompRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1934E0712CFF275600CF1003 /* CompRepositoryInterface.swift */; };
-		1934E07D2CFF27BC00CF1003 /* CompRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1934E07C2CFF27BC00CF1003 /* CompRepository.swift */; };
-		1934E07E2CFF27BC00CF1003 /* CompRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1934E07C2CFF27BC00CF1003 /* CompRepository.swift */; };
 		1E775360E4437F4851C47981 /* DomainCompInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A91ADB1EC58ADADB58FDF70 /* DomainCompInterface.framework */; };
 		28746A6604C9179888CB6BF8 /* DomainCompInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A91ADB1EC58ADADB58FDF70 /* DomainCompInterface.framework */; };
+		2BF3354CB0DE2FDEDC66ABDB /* CompRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3510BE926558DF795B74F389 /* CompRepositoryInterface.swift */; };
 		2CEBFD0F97A8FF67C36BA300 /* MockDomainComp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B767D12909AA61C0587FCE3 /* MockDomainComp.framework */; };
 		2E0B4C038F32E68F8BF45CBB /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D061F2F44ECD1C805FB4E9E /* ExampleView.swift */; };
 		2F5389014821180DB6B7AB8A /* CompError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C28C516402FF8C0C52CC1 /* CompError.swift */; };
-		436C22624436B33ED56CC3F0 /* CoreService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DEECAAD2C62DBC27EF1FCF /* CoreService.framework */; };
-		4C2778B3B66F3212C98BC5CB /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF36A6270558407760341A /* Shared.framework */; };
+		3114E6CA4D8B129F2987120E /* CoreDatabase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0313E25D318B7FFB027B8F83 /* CoreDatabase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		57DE2A76FD3A47766CC870D0 /* FeatureCreateComp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8F910BCFF4A9C6BB15356 /* FeatureCreateComp.swift */; };
 		596DBD8E6AE18B43B40096E9 /* MockDomainComp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78203EC4A362FE12E6505D7D /* MockDomainComp.swift */; };
 		5E1068D10D9C7C113B61F114 /* DomainCompInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A91ADB1EC58ADADB58FDF70 /* DomainCompInterface.framework */; };
 		6155EE75C3B20C38DBCEBD64 /* AppCraftCoreUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB97389B3718D32EA9ACE0D /* AppCraftCoreUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		62EAD4B535EEB62EB942DE0D /* CompRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E1248ABBAC5DFE58026C0F /* CompRepository.framework */; };
 		65ED2659BC7C9C8C7FF43C31 /* Shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF36A6270558407760341A /* Shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		759AAD8D7E5328FF2792D11A /* CompListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348DB5A9B1544B12060774B9 /* CompListView.swift */; };
+		760B7F6AEF15556964BF5B2C /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF36A6270558407760341A /* Shared.framework */; };
 		86BA4C22FC6B4BD325268210 /* AppCraftCoreUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB97389B3718D32EA9ACE0D /* AppCraftCoreUI.framework */; };
 		8BC682E25325AED6B2F84E4A /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 71EC03AFEB233B7541397B19 /* ComposableArchitecture */; };
 		9140AD2D5A112BBD13E26227 /* FeatureComp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E16427F349E154F12AE1682E /* FeatureComp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		927BDF2EF5C4DC89236CFB5D /* CompRepositoryInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2A8E4D8BD0587C24C0AAA7 /* CompRepositoryInterface.framework */; };
 		94E62907740766B6B8AF43B0 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF36A6270558407760341A /* Shared.framework */; };
 		A6FEC6D472A6D47340963D0A /* CreateCompView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E2BC34BE4DF87E2A7F8025 /* CreateCompView.swift */; };
-		AAC6E0EFC360881843BB0B43 /* CompRepositoryInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2A8E4D8BD0587C24C0AAA7 /* CompRepositoryInterface.framework */; };
+		A7D43F433D3327E62A6858F3 /* CoreDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0313E25D318B7FFB027B8F83 /* CoreDatabase.framework */; };
 		AC446FBCCA53532CC932B88A /* EditCompView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7905521C7D0C354F5621C63F /* EditCompView.swift */; };
 		AFAD0A9B944E839D9462053E /* FeatureComp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16427F349E154F12AE1682E /* FeatureComp.framework */; };
+		B0049AECBDD58B9CA5EDDD5D /* CompRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A882416BB60B33253C83BC /* CompRepository.swift */; };
 		B305E9D8D79DA5F9B21B8C64 /* CompView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9079D680D8EB82ED12D3F10C /* CompView.swift */; };
 		B5AA781371B65EE0B6ACA6FE /* DomainCompInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC1631D70C95E4D5D3D64F0 /* DomainCompInterface.swift */; };
 		B663118841447DDE2A14586F /* DomainCompInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A91ADB1EC58ADADB58FDF70 /* DomainCompInterface.framework */; };
 		BC15DBB518FC7867A525E9E5 /* CoreAddingPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99690CE1D78EA6B017359C /* CoreAddingPosition.swift */; };
+		C3ADE3D154CEE70CD8777F1D /* CoreDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0313E25D318B7FFB027B8F83 /* CoreDatabase.framework */; };
 		C4952800B0FC8104ADB2B7EF /* DomainComp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCE8EA7A2AA94A64AAF2A8A /* DomainComp.swift */; };
-		DC510A4DCC4B26F2138E2CA6 /* CoreService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DEECAAD2C62DBC27EF1FCF /* CoreService.framework */; };
 		F32B16188521283C6C14B75C /* DomainCompInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6A91ADB1EC58ADADB58FDF70 /* DomainCompInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		01C655A996FEF762ADEBCB6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E6B1505F6B6076D9FE00452 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A36E4801788C8E0E1C9DB629;
+			remoteInfo = CompRepository;
+		};
 		5F18771B677E18A2149E5EE5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3E6B1505F6B6076D9FE00452 /* Project object */;
@@ -68,13 +72,6 @@
 			remoteGlobalIDString = 9B00196503513D2941D820A2;
 			remoteInfo = DomainCompInterface;
 		};
-		9489A5178BB91E1D05576618 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3E6B1505F6B6076D9FE00452 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A1EF9B03A00C8741F9921843;
-			remoteInfo = CompRepositoryInterface;
-		};
 		AC87B3296118EE70D9EF8354 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3E6B1505F6B6076D9FE00452 /* Project object */;
@@ -88,13 +85,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = CEF714B5985335BAE9A5771D;
 			remoteInfo = MockDomainComp;
-		};
-		CE62569A28E05220A6BCF657 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3E6B1505F6B6076D9FE00452 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A1EF9B03A00C8741F9921843;
-			remoteInfo = CompRepositoryInterface;
 		};
 		EDD6D010B1012F19D4B06051 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -123,21 +113,11 @@
 			dstSubfolderSpec = 10;
 			files = (
 				6155EE75C3B20C38DBCEBD64 /* AppCraftCoreUI.framework in Embed Frameworks */,
-				074FD617575C7610B8F272FA /* CoreService.framework in Embed Frameworks */,
+				3114E6CA4D8B129F2987120E /* CoreDatabase.framework in Embed Frameworks */,
 				F32B16188521283C6C14B75C /* DomainCompInterface.framework in Embed Frameworks */,
 				9140AD2D5A112BBD13E26227 /* FeatureComp.framework in Embed Frameworks */,
 				05AC265D0D170C741D6F35AE /* MockDomainComp.framework in Embed Frameworks */,
 				65ED2659BC7C9C8C7FF43C31 /* Shared.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7BD9C882F896AD4C934D3946 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,28 +165,27 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1934E0712CFF275600CF1003 /* CompRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompRepositoryInterface.swift; sourceTree = "<group>"; };
-		1934E07C2CFF27BC00CF1003 /* CompRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompRepository.swift; sourceTree = "<group>"; };
+		0313E25D318B7FFB027B8F83 /* CoreDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B767D12909AA61C0587FCE3 /* MockDomainComp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MockDomainComp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B99690CE1D78EA6B017359C /* CoreAddingPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAddingPosition.swift; sourceTree = "<group>"; };
 		348DB5A9B1544B12060774B9 /* CompListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompListView.swift; sourceTree = "<group>"; };
+		3510BE926558DF795B74F389 /* CompRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompRepositoryInterface.swift; sourceTree = "<group>"; };
 		3BCB8E0F406CC79A6D05DCF3 /* DomainComp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DomainComp-Info.plist"; sourceTree = "<group>"; };
 		3CE8F910BCFF4A9C6BB15356 /* FeatureCreateComp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCreateComp.swift; sourceTree = "<group>"; };
 		3D3C28C516402FF8C0C52CC1 /* CompError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompError.swift; sourceTree = "<group>"; };
 		422E42F4B23071D235AFD228 /* CompRepository-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "CompRepository-Info.plist"; sourceTree = "<group>"; };
 		45DB34A66EAFBE30A20B9783 /* FeatureCompExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeatureCompExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D278F5B3278BBF57F8A204A /* FeatureComp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "FeatureComp-Info.plist"; sourceTree = "<group>"; };
-		5B2A8E4D8BD0587C24C0AAA7 /* CompRepositoryInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CompRepositoryInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D061F2F44ECD1C805FB4E9E /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
 		6A91ADB1EC58ADADB58FDF70 /* DomainCompInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DomainCompInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BCD5AE832129FC7E989D9B9 /* FeatureCompExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCompExample.swift; sourceTree = "<group>"; };
-		702BCF375113CC337AD5A99D /* CompRepositoryInterface-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "CompRepositoryInterface-Info.plist"; sourceTree = "<group>"; };
 		78203EC4A362FE12E6505D7D /* MockDomainComp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDomainComp.swift; sourceTree = "<group>"; };
 		7905521C7D0C354F5621C63F /* EditCompView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCompView.swift; sourceTree = "<group>"; };
 		80E2BC34BE4DF87E2A7F8025 /* CreateCompView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCompView.swift; sourceTree = "<group>"; };
 		8AB97389B3718D32EA9ACE0D /* AppCraftCoreUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppCraftCoreUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC1631D70C95E4D5D3D64F0 /* DomainCompInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainCompInterface.swift; sourceTree = "<group>"; };
 		9079D680D8EB82ED12D3F10C /* CompView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompView.swift; sourceTree = "<group>"; };
+		93A882416BB60B33253C83BC /* CompRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompRepository.swift; sourceTree = "<group>"; };
 		A3E1248ABBAC5DFE58026C0F /* CompRepository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CompRepository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E3EEF178400DF4155700D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B586B90BBF362B1DACEB1895 /* DomainComp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DomainComp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -216,7 +195,6 @@
 		EC49B38F0F915D1DE70B7703 /* DomainCompInterface-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DomainCompInterface-Info.plist"; sourceTree = "<group>"; };
 		EDCE8EA7A2AA94A64AAF2A8A /* DomainComp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainComp.swift; sourceTree = "<group>"; };
 		F3CF36A6270558407760341A /* Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3DEECAAD2C62DBC27EF1FCF /* CoreService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,7 +202,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				927BDF2EF5C4DC89236CFB5D /* CompRepositoryInterface.framework in Frameworks */,
+				C3ADE3D154CEE70CD8777F1D /* CoreDatabase.framework in Frameworks */,
+				760B7F6AEF15556964BF5B2C /* Shared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +229,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAC6E0EFC360881843BB0B43 /* CompRepositoryInterface.framework in Frameworks */,
+				62EAD4B535EEB62EB942DE0D /* CompRepository.framework in Frameworks */,
 				28746A6604C9179888CB6BF8 /* DomainCompInterface.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +238,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				436C22624436B33ED56CC3F0 /* CoreService.framework in Frameworks */,
+				A7D43F433D3327E62A6858F3 /* CoreDatabase.framework in Frameworks */,
 				94E62907740766B6B8AF43B0 /* Shared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,15 +250,6 @@
 				86BA4C22FC6B4BD325268210 /* AppCraftCoreUI.framework in Frameworks */,
 				B663118841447DDE2A14586F /* DomainCompInterface.framework in Frameworks */,
 				8BC682E25325AED6B2F84E4A /* ComposableArchitecture in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FCAAD738195628C2FE37122A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC510A4DCC4B26F2138E2CA6 /* CoreService.framework in Frameworks */,
-				4C2778B3B66F3212C98BC5CB /* Shared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,22 +273,6 @@
 				AB8D816CC3DED94933385E6B /* InfoPlists */,
 			);
 			path = Derived;
-			sourceTree = "<group>";
-		};
-		1934E06F2CFF274800CF1003 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-				1934E07C2CFF27BC00CF1003 /* CompRepository.swift */,
-			);
-			path = Repository;
-			sourceTree = "<group>";
-		};
-		1934E0702CFF274800CF1003 /* RepositoryInterface */ = {
-			isa = PBXGroup;
-			children = (
-				1934E0712CFF275600CF1003 /* CompRepositoryInterface.swift */,
-			);
-			path = RepositoryInterface;
 			sourceTree = "<group>";
 		};
 		2114FD3FC0208AF6908D4991 /* Resources */ = {
@@ -350,8 +304,7 @@
 			children = (
 				8AB97389B3718D32EA9ACE0D /* AppCraftCoreUI.framework */,
 				A3E1248ABBAC5DFE58026C0F /* CompRepository.framework */,
-				5B2A8E4D8BD0587C24C0AAA7 /* CompRepositoryInterface.framework */,
-				F3DEECAAD2C62DBC27EF1FCF /* CoreService.framework */,
+				0313E25D318B7FFB027B8F83 /* CoreDatabase.framework */,
 				B586B90BBF362B1DACEB1895 /* DomainComp.framework */,
 				6A91ADB1EC58ADADB58FDF70 /* DomainCompInterface.framework */,
 				E16427F349E154F12AE1682E /* FeatureComp.framework */,
@@ -375,13 +328,12 @@
 		2FA3A0CF8DF9BEC501D671F5 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				1934E06F2CFF274800CF1003 /* Repository */,
-				1934E0702CFF274800CF1003 /* RepositoryInterface */,
 				274FD0BF3BD23A3403B3589A /* Domain */,
 				76319707BF7887585BAE66CC /* DomainInterface */,
 				2AE8E872A97B44AA60101227 /* Example */,
 				B8DD050A36F93C9ECAF704C6 /* Feature */,
 				398676FB949B314B0AAABAB1 /* Mock */,
+				EA4C8CD4BD73173C48DE99D5 /* Repository */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -415,7 +367,6 @@
 			isa = PBXGroup;
 			children = (
 				422E42F4B23071D235AFD228 /* CompRepository-Info.plist */,
-				702BCF375113CC337AD5A99D /* CompRepositoryInterface-Info.plist */,
 				3BCB8E0F406CC79A6D05DCF3 /* DomainComp-Info.plist */,
 				EC49B38F0F915D1DE70B7703 /* DomainCompInterface-Info.plist */,
 				4D278F5B3278BBF57F8A204A /* FeatureComp-Info.plist */,
@@ -450,6 +401,15 @@
 				3CE8F910BCFF4A9C6BB15356 /* FeatureCreateComp.swift */,
 			);
 			path = Feature;
+			sourceTree = "<group>";
+		};
+		EA4C8CD4BD73173C48DE99D5 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				93A882416BB60B33253C83BC /* CompRepository.swift */,
+				3510BE926558DF795B74F389 /* CompRepositoryInterface.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		F6D653217F58F46F73BD7FE7 /* Enum */ = {
@@ -536,30 +496,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				F3FDEFAA4E72B51FD17E274E /* PBXTargetDependency */,
+				0F06467F29A8020B582E4B75 /* PBXTargetDependency */,
 				8E33431E50421E2251BB0723 /* PBXTargetDependency */,
 			);
 			name = DomainComp;
 			productName = DomainComp;
 			productReference = B586B90BBF362B1DACEB1895 /* DomainComp.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A1EF9B03A00C8741F9921843 /* CompRepositoryInterface */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1531EE9E0895FA20AD5E92F3 /* Build configuration list for PBXNativeTarget "CompRepositoryInterface" */;
-			buildPhases = (
-				7ECA686B5720C157327AB954 /* Sources */,
-				A16C1D13AD8D4EBB757B913E /* Resources */,
-				7BD9C882F896AD4C934D3946 /* Embed Frameworks */,
-				FCAAD738195628C2FE37122A /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CompRepositoryInterface;
-			productName = CompRepositoryInterface;
-			productReference = 5B2A8E4D8BD0587C24C0AAA7 /* CompRepositoryInterface.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A36E4801788C8E0E1C9DB629 /* CompRepository */ = {
@@ -574,7 +516,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				DE1D253C2485CD14D59B3169 /* PBXTargetDependency */,
 			);
 			name = CompRepository;
 			productName = CompRepository;
@@ -608,9 +549,6 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				TargetAttributes = {
-					A1EF9B03A00C8741F9921843 = {
-						LastSwiftMigration = 1610;
-					};
 				};
 			};
 			buildConfigurationList = B2603D19F338733BE817534D /* Build configuration list for PBXProject "CompApp" */;
@@ -633,7 +571,6 @@
 				9DE42AC48184672465F530C3 /* DomainComp */,
 				9B00196503513D2941D820A2 /* DomainCompInterface */,
 				A36E4801788C8E0E1C9DB629 /* CompRepository */,
-				A1EF9B03A00C8741F9921843 /* CompRepositoryInterface */,
 				CEF714B5985335BAE9A5771D /* MockDomainComp */,
 				8508514EFA7439EDD61A10C2 /* FeatureCompExample */,
 			);
@@ -676,13 +613,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A16C1D13AD8D4EBB757B913E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D9D614F189E766010B4475A2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -706,6 +636,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0049AECBDD58B9CA5EDDD5D /* CompRepository.swift in Sources */,
+				2BF3354CB0DE2FDEDC66ABDB /* CompRepositoryInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -725,20 +657,9 @@
 				0E09F44B2A0A7BCF053D431B /* FeatureComp.swift in Sources */,
 				57DE2A76FD3A47766CC870D0 /* FeatureCreateComp.swift in Sources */,
 				759AAD8D7E5328FF2792D11A /* CompListView.swift in Sources */,
-				1934E0722CFF275600CF1003 /* CompRepositoryInterface.swift in Sources */,
 				B305E9D8D79DA5F9B21B8C64 /* CompView.swift in Sources */,
-				1934E07D2CFF27BC00CF1003 /* CompRepository.swift in Sources */,
 				A6FEC6D472A6D47340963D0A /* CreateCompView.swift in Sources */,
 				AC446FBCCA53532CC932B88A /* EditCompView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7ECA686B5720C157327AB954 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1934E07E2CFF27BC00CF1003 /* CompRepository.swift in Sources */,
-				1934E0732CFF275600CF1003 /* CompRepositoryInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -762,6 +683,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0F06467F29A8020B582E4B75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CompRepository;
+			target = A36E4801788C8E0E1C9DB629 /* CompRepository */;
+			targetProxy = 01C655A996FEF762ADEBCB6D /* PBXContainerItemProxy */;
+		};
 		15D4791AC50BEB3E9DAC2448 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MockDomainComp;
@@ -791,18 +718,6 @@
 			name = DomainCompInterface;
 			target = 9B00196503513D2941D820A2 /* DomainCompInterface */;
 			targetProxy = EDD6D010B1012F19D4B06051 /* PBXContainerItemProxy */;
-		};
-		DE1D253C2485CD14D59B3169 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CompRepositoryInterface;
-			target = A1EF9B03A00C8741F9921843 /* CompRepositoryInterface */;
-			targetProxy = 9489A5178BB91E1D05576618 /* PBXContainerItemProxy */;
-		};
-		F3FDEFAA4E72B51FD17E274E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CompRepositoryInterface;
-			target = A1EF9B03A00C8741F9921843 /* CompRepositoryInterface */;
-			targetProxy = CE62569A28E05220A6BCF657 /* PBXContainerItemProxy */;
 		};
 		F483CCBD4676421EB5FC404C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -846,46 +761,12 @@
 			};
 			name = Release;
 		};
-		12A281C168FB64883DA16B18 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Derived/InfoPlists/CompRepositoryInterface-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.appcraft.comprepositoryinterface;
-				PRODUCT_NAME = CompRepositoryInterface;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_COMPILATION_MODE = singlefile;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		142EAF88725545DBAC0F6948 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = JRXGXW25BG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Sources/Example/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -911,6 +792,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = JRXGXW25BG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Sources/Example/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -1346,52 +1228,9 @@
 			};
 			name = Release;
 		};
-		B50FB08784876F72882BD4FF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Derived/InfoPlists/CompRepositoryInterface-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.appcraft.comprepositoryinterface;
-				PRODUCT_NAME = CompRepositoryInterface;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1531EE9E0895FA20AD5E92F3 /* Build configuration list for PBXNativeTarget "CompRepositoryInterface" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				12A281C168FB64883DA16B18 /* Debug */,
-				B50FB08784876F72882BD4FF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		423DFCA1D8F9F247FC846211 /* Build configuration list for PBXNativeTarget "MockDomainComp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

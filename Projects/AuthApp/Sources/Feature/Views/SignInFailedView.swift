@@ -36,6 +36,7 @@ public struct SignInFailedView: View {
                 
                 Text("Sorry !")
                     .font(ACFont.custom(32, weight: .bold))
+                    .foregroundStyle(Color.black)
                 
                 Spacer()
             }
@@ -45,31 +46,82 @@ public struct SignInFailedView: View {
                 
                 Text("Please try again")
             }
+            .foregroundStyle(Color.black)
             .font(ACFont.custom(18))
             .frame(height: 100)
             .padding(.vertical, 40)
             .padding(.bottom, 20)
             
-            AppCraftCoreUIAsset
-                .googleSignin
-                .swiftUIImage
-                .resizable()
-                .scaledToFit()
-                .padding(.horizontal, 50)
-            
-            SignInWithAppleButton { request in
-                //TODO: signin
-            } onCompletion: { result in
+            Button {
                 
+            } label: {
+                HStack {
+                    AppCraftCoreUIAsset
+                        .icGoogle
+                        .swiftUIImage
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 20, height: 20)
+                    
+                    Spacer()
+                    
+                    Text("Sign in with Google")
+                        .font(ACFont.custom(18))
+                        .opacity(0.8)
+                    
+                    Spacer()
+                    
+                    Color.clear
+                        .frame(width: 20, height: 20)
+                }
+                .padding(.horizontal)
+                .frame(height: 48)
+                .background(
+                    Color.black
+                )
+                .clipShape(RoundedRectangle(cornerRadius: 8))
             }
-            .scaledToFit()
-            .padding(.horizontal, 50)
+            .padding(.horizontal, 40)
+            
+            Button {
+                
+            } label: {
+                HStack {
+                    AppCraftCoreUIAsset
+                        .icApple
+                        .swiftUIImage
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 20, height: 20)
+                    
+                    Spacer()
+                    
+                    Text("Sign in with Apple")
+                        .font(ACFont.custom(18))
+                        .opacity(0.8)
+                    
+                    Spacer()
+                    
+                    Color.clear
+                        .frame(width: 20, height: 20)
+                }
+                .padding(.horizontal)
+                .frame(height: 48)
+                .background(Color.black)
+                .clipShape(RoundedRectangle(cornerRadius: 8))
+            }
+            .padding(.horizontal, 40)
+            .padding(.top, 10)
 
             
             Spacer()
         }
         .padding()
+        .foregroundStyle(Color.white)
         .background(Color.white)
-        .foregroundStyle(Color.black)
     }
+}
+
+#Preview {
+    SignInFailedView(method: .apple)
 }

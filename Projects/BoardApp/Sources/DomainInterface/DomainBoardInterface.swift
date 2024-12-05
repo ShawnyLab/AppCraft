@@ -9,8 +9,8 @@ import Shared
 import Foundation
 
 public protocol DomainBoardInterface {
-    var boards: [Board] { get async }
-    func saveBoard(_ board: Board) async throws
-    func fetchBoards() async throws
-    func deleteBoard(id: String) async throws
+    func saveBoard(userID: String, _ board: Board) async throws -> [Board]
+    func getBoards() -> [Board]
+    func fetchBoards(userID: String) async throws -> [Board]
+    func deleteBoard(userID: String, id: String) async throws -> [Board]
 }

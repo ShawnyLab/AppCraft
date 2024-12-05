@@ -56,20 +56,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7D9C62E1180D4D06E17D9143"
-               BuildableName = "BoardRepositoryInterface.framework"
-               BlueprintName = "BoardRepositoryInterface"
-               ReferencedContainer = "container:Projects/BoardApp/BoardApp.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "A36E4801788C8E0E1C9DB629"
                BuildableName = "CompRepository.framework"
                BlueprintName = "CompRepository"
@@ -84,10 +70,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A1EF9B03A00C8741F9921843"
-               BuildableName = "CompRepositoryInterface.framework"
-               BlueprintName = "CompRepositoryInterface"
-               ReferencedContainer = "container:Projects/CompApp/CompApp.xcodeproj">
+               BlueprintIdentifier = "47B99EABCA6440821A59EFB2"
+               BuildableName = "CoreAuth.framework"
+               BlueprintName = "CoreAuth"
+               ReferencedContainer = "container:Projects/Core/Core.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -98,9 +84,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6F0BF1019EB11538A05E4B2A"
-               BuildableName = "CoreService.framework"
-               BlueprintName = "CoreService"
+               BlueprintIdentifier = "0FB8CF7EF4725E281FF0F0C9"
+               BuildableName = "CoreDatabase.framework"
+               BlueprintName = "CoreDatabase"
                ReferencedContainer = "container:Projects/Core/Core.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -339,20 +325,6 @@
                BlueprintIdentifier = "5F57854A68CFAE6B151C3F61"
                BuildableName = "UserRepository.framework"
                BlueprintName = "UserRepository"
-               ReferencedContainer = "container:Projects/AuthApp/AuthApp.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F72DBB58503589822D7F456A"
-               BuildableName = "UserRepositoryInterface.framework"
-               BlueprintName = "UserRepositoryInterface"
                ReferencedContainer = "container:Projects/AuthApp/AuthApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

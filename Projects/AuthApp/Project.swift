@@ -10,9 +10,34 @@ let project = Project(
         .remote(
             url: "https://github.com/firebase/firebase-ios-sdk",
             requirement: .branch("main")
-        )
+        ),
+        .remote(
+            url: "https://github.com/google/GoogleSignIn-iOS.git",
+            requirement: .upToNextMajor(from: "7.0.0")
+        ),
     ],
     targets: [
+        Target(
+            name: "FeatureAuthExample",
+            platform: .iOS,
+            product: .app,
+            bundleId: "com.appcraft.featureauthexample",
+            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
+            infoPlist: .default,
+            sources: ["Sources/Example/**"],
+            dependencies: [
+                .target(name: "FeatureAuth"),
+                .target(name: "MockDomainAuth"),
+                .target(name: "DomainAuthInterface"),
+                .package(product: "FirebaseCore"),
+                .package(product: "GoogleSignIn"),
+            ],
+            settings: .settings(
+                base: [
+                    "DEVELOPMENT_TEAM": "JRXGXW25BG"
+                ]
+            )
+        ),
         Target(
             name: "FeatureAuth",
             platform: .iOS,
@@ -37,7 +62,7 @@ let project = Project(
             sources: ["Sources/Domain/**"],
             dependencies: [
                 .target(name: "DomainAuthInterface"),
-                .target(name: "UserRepositoryInterface")
+                .target(name: "UserRepository")
             ]
         ),
         Target(
@@ -49,7 +74,7 @@ let project = Project(
             infoPlist: .default,
             sources: ["Sources/DomainInterface/**"],
             dependencies: [
-                .project(target: "CoreService", path: "../Core"),
+                .project(target: "CoreAuth", path: "../Core"),
                 .project(target: "Shared", path: "../Core"),
             ]
         ),
@@ -62,20 +87,7 @@ let project = Project(
             infoPlist: .default,
             sources: ["Sources/Repository/**"],
             dependencies: [
-                .target(name: "UserRepositoryInterface"),
-                .package(product: "FirebaseFirestore")
-            ]
-        ),
-        Target(
-            name: "UserRepositoryInterface",
-            platform: .iOS,
-            product: .framework,
-            bundleId: "com.appcraft.userrepositoryinterface",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
-            infoPlist: .default,
-            sources: ["Sources/RepositoryInterface/**"],
-            dependencies: [
-                .project(target: "CoreService", path: "../Core"),
+                .project(target: "CoreDatabase", path: "../Core"),
                 .project(target: "Shared", path: "../Core"),
             ]
         ),
@@ -90,21 +102,6 @@ let project = Project(
             dependencies: [
                 .target(name: "DomainAuthInterface")
             ]
-        ),
-        Target(
-            name: "FeatureAuthExample",
-            platform: .iOS,
-            product: .app,
-            bundleId: "com.appcraft.featureauthexample",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
-            infoPlist: .file(path: "Sources/Example/Resources/Info.plist"),
-            sources: ["Sources/Example/**"],
-            dependencies: [
-                .target(name: "FeatureAuth"),
-                .target(name: "MockDomainAuth"),
-                .target(name: "DomainAuthInterface")
-            ],
-            settings: .settings(base: [:])
         )
     ]
 )

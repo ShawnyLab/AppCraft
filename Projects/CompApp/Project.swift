@@ -33,7 +33,7 @@ let project = Project(
             sources: ["Sources/Domain/**"],
             dependencies: [
                 .target(name: "DomainCompInterface"),
-                .target(name: "CompRepositoryInterface")
+                .target(name: "CompRepository")
             ]
         ),
         Target(
@@ -45,7 +45,7 @@ let project = Project(
             infoPlist: .default,
             sources: ["Sources/DomainInterface/**"],
             dependencies: [
-                .project(target: "CoreService", path: "../Core"),
+                .project(target: "CoreDatabase", path: "../Core"),
                 .project(target: "Shared", path: "../Core"),
             ]
         ),
@@ -58,19 +58,7 @@ let project = Project(
             infoPlist: .default,
             sources: ["Sources/Repository/**"],
             dependencies: [
-                .target(name: "CompRepositoryInterface"),
-            ]
-        ),
-        Target(
-            name: "CompRepositoryInterface",
-            platform: .iOS,
-            product: .framework,
-            bundleId: "com.appcraft.comprepositoryinterface",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
-            infoPlist: .default,
-            sources: ["Sources/RepositoryInterface/**"],
-            dependencies: [
-                .project(target: "CoreService", path: "../Core"),
+                .project(target: "CoreDatabase", path: "../Core"),
                 .project(target: "Shared", path: "../Core"),
             ]
         ),
@@ -99,7 +87,11 @@ let project = Project(
                 .target(name: "MockDomainComp"),
                 .target(name: "DomainCompInterface")
             ],
-            settings: .settings(base: [:])
+            settings: .settings(
+                base: [
+                    "DEVELOPMENT_TEAM": "JRXGXW25BG"
+                ]
+            )
         )
     ]
 )

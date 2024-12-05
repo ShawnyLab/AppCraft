@@ -20,20 +20,6 @@
                ReferencedContainer = "container:AuthApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F72DBB58503589822D7F456A"
-               BuildableName = "UserRepositoryInterface.framework"
-               BlueprintName = "UserRepositoryInterface"
-               ReferencedContainer = "container:AuthApp.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

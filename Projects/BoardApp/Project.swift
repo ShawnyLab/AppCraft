@@ -33,7 +33,7 @@ let project = Project(
             sources: ["Sources/Domain/**"],
             dependencies: [
                 .target(name: "DomainBoardInterface"),
-                .target(name: "BoardRepositoryInterface")
+                .target(name: "BoardRepository")
             ]
         ),
         Target(
@@ -45,7 +45,7 @@ let project = Project(
             infoPlist: .default,
             sources: ["Sources/DomainInterface/**"],
             dependencies: [
-                .project(target: "CoreService", path: "../Core"),
+                .project(target: "CoreDatabase", path: "../Core"),
                 .project(target: "Shared", path: "../Core"),
             ]
         ),
@@ -58,19 +58,7 @@ let project = Project(
             infoPlist: .default,
             sources: ["Sources/Repository/**"],
             dependencies: [
-                .target(name: "BoardRepositoryInterface"),
-            ]
-        ),
-        Target(
-            name: "BoardRepositoryInterface",
-            platform: .iOS,
-            product: .framework,
-            bundleId: "com.appcraft.boardrepositoryinterface",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
-            infoPlist: .default,
-            sources: ["Sources/RepositoryInterface/**"],
-            dependencies: [
-                .project(target: "CoreService", path: "../Core"),
+                .project(target: "CoreDatabase", path: "../Core"),
                 .project(target: "Shared", path: "../Core"),
             ]
         ),
@@ -99,7 +87,11 @@ let project = Project(
                 .target(name: "MockDomainBoard"),
                 .target(name: "DomainBoardInterface")
             ],
-            settings: .settings(base: [:])
+            settings: .settings(
+                base: [
+                    "DEVELOPMENT_TEAM": "JRXGXW25BG"
+                ]
+            )
         )
     ]
 )

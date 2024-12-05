@@ -2,18 +2,37 @@ import ProjectDescription
 
 let project = Project(
     name: "Core",
-    packages: [],
+    packages: [
+        .remote(
+            url: "https://github.com/firebase/firebase-ios-sdk",
+            requirement: .branch("main")
+        )
+    ],
     targets: [
         Target(
-            name: "CoreService",
+            name: "CoreAuth",
             platform: .iOS,
             product: .framework,
-            bundleId: "com.appcraft.coreservice",
+            bundleId: "com.appcraft.coreauth",
             deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
-            sources: ["Sources/CoreService/**"],
+            sources: ["Sources/CoreAuth/**"],
             dependencies: [
                 .target(name: "Shared"),
+                .package(product: "FirebaseAuth")
+            ]
+        ),
+        Target(
+            name: "CoreDatabase",
+            platform: .iOS,
+            product: .framework,
+            bundleId: "com.appcraft.coredatabase",
+            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
+            infoPlist: .default,
+            sources: ["Sources/CoreDatabase/**"],
+            dependencies: [
+                .target(name: "Shared"),
+                .package(product: "FirebaseFirestore")
             ]
         ),
         Target(

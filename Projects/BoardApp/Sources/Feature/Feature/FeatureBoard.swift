@@ -13,9 +13,11 @@ import DomainBoardInterface
 @Reducer
 public struct FeatureBoard {
     private let domainBoard: DomainBoardInterface
+    private let userID: String?
     
-    public init(domainBoard: DomainBoardInterface) {
+    public init(domainBoard: DomainBoardInterface, userID: String) {
         self.domainBoard = domainBoard
+        self.userID = userID
     }
     
     public struct State: Equatable, Sendable, Identifiable {
@@ -67,13 +69,17 @@ public struct FeatureBoard {
                 state.error = nil
                 
                 return .run { send in
-                    await send(.fetchBoardsResult(
-                        TaskResult {
-                            try await domainBoard.fetchBoards()
-                            let boards = await domainBoard.boards
-                            return boards
-                        }
-                    ))
+                    if let userID {
+                        await send(.fetchBoardsResult(
+                            TaskResult {
+                                let boards = try await domainBoard.fetchBoards(userID: userID)
+                                return boards
+                            }
+                        ))
+                    } else {
+                        //로그인 화면으로 이동
+                    }
+
                 }
                 
             case let .fetchBoardsResult(.success(boards)):
@@ -88,12 +94,17 @@ public struct FeatureBoard {
                 
             case .deleteBoard(let id):
                 return .run { send in
-                    await send(.deleteBoardResult(
-                        TaskResult {
-                            try await domainBoard.deleteBoard(id: id)
-                            return id
-                        }
-                    ))
+                    if let userID {
+                        await send(.deleteBoardResult(
+                            TaskResult {
+                                _ = try await domainBoard.deleteBoard(userID: userID, id: id)
+                                return id
+                            }
+                        ))
+                    } else {
+                        //로그인 화면으로 이동
+                    }
+
                 }
                 
             case let .deleteBoardResult(.success(id)):

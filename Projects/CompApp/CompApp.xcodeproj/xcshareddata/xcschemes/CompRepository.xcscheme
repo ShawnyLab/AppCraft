@@ -20,20 +20,6 @@
                ReferencedContainer = "container:CompApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A1EF9B03A00C8741F9921843"
-               BuildableName = "CompRepositoryInterface.framework"
-               BlueprintName = "CompRepositoryInterface"
-               ReferencedContainer = "container:CompApp.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

@@ -7,7 +7,9 @@
 
 import Foundation
 
-public struct Board: Identifiable, Equatable, Codable {
+public struct Board: DatabaseFetchableType {
+    public static var path: String = "boards"
+    
     public var id: String
     public var name: String
     public var createrId: String

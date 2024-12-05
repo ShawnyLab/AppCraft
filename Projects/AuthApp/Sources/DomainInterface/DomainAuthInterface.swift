@@ -12,5 +12,11 @@ import CoreService
 public protocol DomainAuthInterface {
     var currentUser: UserSession? { get }
     func signIn(email: String, password: String) async throws -> ACAccount
+    
+    func signInWithGoogle()
+    func signInWithApple()
+    
     func signOut() async throws
 }
+
+

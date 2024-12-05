@@ -7,6 +7,6 @@
 import Foundation
 
 public protocol SectorType: Identifiable, Equatable, Codable {
-    var id: UUID { get }
+    var id: String { get }
     var cores: [any ACCoreType] { get }
 }

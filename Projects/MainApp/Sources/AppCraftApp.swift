@@ -1,6 +1,4 @@
 import SwiftUI
-import ComposableArchitecture
-import AppCraftUI
 import UIKit
 
 @main
@@ -10,8 +8,11 @@ struct AppCraftApp: App {
     var body: some Scene {
         WindowGroup {
             VStack {
-                
+                DefaultView()
+                    .background(Color.white.ignoresSafeArea())
             }
+            .environmentObject(AppState())
+            .preferredColorScheme(.light)
         }
     }
 }

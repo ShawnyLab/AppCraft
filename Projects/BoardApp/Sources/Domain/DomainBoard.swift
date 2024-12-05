@@ -8,31 +8,31 @@
 import Foundation
 import Shared
 import DomainBoardInterface
-import CoreService
+import BoardRepository
 
-public actor DomainBoard: DomainBoardInterface {
-    private let service: CoreServiceType
-    private var _boards: [Board] = []
+public actor DomainBoard: @preconcurrency DomainBoardInterface {
+    private let repository: BoardRepositoryInterface
     
-    public var boards: [Board] {
-        _boards
+    public init (repository: BoardRepositoryInterface) {
+        self.repository = repository
     }
     
-    public init(service: CoreServiceType) {
-        self.service = service
+    public func fetchBoards(userID: String) async throws -> [Board] {
+        try await repository.fetchBoards(userID: userID)
+        return repository.boards
     }
     
-    public func saveBoard(_ board: Board) async throws {
-        try await service.saveBoard(board)
-        try await fetchBoards()  // 저장 후 목록 갱신
+    public func getBoards() -> [Board] {
+        return repository.boards
     }
     
-    public func fetchBoards() async throws {
-        _boards = try await service.fetchBoards()
+    public func saveBoard(userID: String, _ board: Board) async throws -> [Board] {
+        try await repository.saveBoard(userID: userID, board)
+        return repository.boards
     }
-    
-    public func deleteBoard(id: String) async throws {
-        try await service.deleteBoard(id: id)
-        try await fetchBoards()  // 삭제 후 목록 갱신
+
+    public func deleteBoard(userID: String, id: String) async throws -> [Board] {
+        try await repository.deleteBoard(userID: userID, id: id)
+        return repository.boards
     }
 }
