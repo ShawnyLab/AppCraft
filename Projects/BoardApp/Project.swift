@@ -2,33 +2,25 @@ import ProjectDescription
 
 let project = Project(
     name: "BoardApp",
-    packages: [
-        .remote(
-            url: "https://github.com/pointfreeco/swift-composable-architecture",
-            requirement: .upToNextMajor(from: "1.8.0")
-        )
-    ],
     targets: [
-        Target(
+        .target(
             name: "FeatureBoard",
-            platform: .iOS,
+            destinations: .iOS,
             product: .framework,
             bundleId: "com.appcraft.featureboard",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
             sources: ["Sources/Feature/**"],
             dependencies: [
                 .project(target: "AppCraftCoreUI", path: "../Core"),
                 .target(name: "DomainBoardInterface"),
-                .package(product: "ComposableArchitecture"),
+                .external(name: "ComposableArchitecture"),
             ]
         ),
-        Target(
+        .target(
             name: "DomainBoard",
-            platform: .iOS,
+            destinations: .iOS,
             product: .framework,
             bundleId: "com.appcraft.domainboard",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
             sources: ["Sources/Domain/**"],
             dependencies: [
@@ -36,12 +28,11 @@ let project = Project(
                 .target(name: "BoardRepository")
             ]
         ),
-        Target(
+        .target(
             name: "DomainBoardInterface",
-            platform: .iOS,
+            destinations: .iOS,
             product: .framework,
             bundleId: "com.appcraft.domainboardinterface",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
             sources: ["Sources/DomainInterface/**"],
             dependencies: [
@@ -49,12 +40,11 @@ let project = Project(
                 .project(target: "Shared", path: "../Core"),
             ]
         ),
-        Target(
+        .target(
             name: "BoardRepository",
-            platform: .iOS,
+            destinations: .iOS,
             product: .framework,
             bundleId: "com.appcraft.boardrepository",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
             sources: ["Sources/Repository/**"],
             dependencies: [
@@ -62,24 +52,22 @@ let project = Project(
                 .project(target: "Shared", path: "../Core"),
             ]
         ),
-        Target(
+        .target(
             name: "MockDomainBoard",
-            platform: .iOS,
+            destinations: .iOS,
             product: .framework,
             bundleId: "com.appcraft.mockdomainboard",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
             sources: ["Sources/Mock/**"],
             dependencies: [
                 .target(name: "DomainBoardInterface")
             ]
         ),
-        Target(
+        .target(
             name: "FeatureBoardExample",
-            platform: .iOS,
+            destinations: .iOS,
             product: .app,
             bundleId: "com.appcraft.featureboardexample",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .file(path: "Sources/Example/Resources/Info.plist"),
             sources: ["Sources/Example/**"],
             dependencies: [

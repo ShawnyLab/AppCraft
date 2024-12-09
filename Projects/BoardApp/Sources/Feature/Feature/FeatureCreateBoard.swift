@@ -7,7 +7,7 @@
 
 import Foundation
 import ComposableArchitecture
-import Shared
+@preconcurrency import Shared
 
 @Reducer
 public struct FeatureCreateBoard {
@@ -15,17 +15,33 @@ public struct FeatureCreateBoard {
         
     }
     
-    public struct State: Equatable, Sendable, Identifiable {
+    @ObservableState
+    public struct State: Equatable, Sendable, Identifiable, Hashable {
         public var id: UUID = UUID()
         public var sectors: [Sector] = []
+        public var isEditingTitle: Bool = false
+        public var title: String = "My Board"
+        
+        public func hash(into hasher: inout Hasher) {
+            hasher.combine(id)
+        }
+        
+        public static func == (lhs: Self, rhs: Self) -> Bool {
+            lhs.id == rhs.id &&
+            lhs.sectors == rhs.sectors
+        }
 
         public init() { }
     }
     
+    @Dependency(\.dismiss) var dismiss
     public enum Action: Equatable {
         case addSector(any SectorType)
         case deleteSector(String)
         case save
+        case cancel
+        case toggleTitleEditing
+        case updateTitle(String)
         
         public static func == (lhs: Action, rhs: Action) -> Bool {
             switch (lhs, rhs) {
@@ -49,6 +65,19 @@ public struct FeatureCreateBoard {
                 return .none
                 
             case .save:
+                return .none
+                
+            case .cancel:
+                return .run { _ in
+                    await self.dismiss()
+                }
+                
+            case .toggleTitleEditing:
+                state.isEditingTitle.toggle()
+                return .none
+                
+            case .updateTitle(let newTitle):
+                state.title = newTitle
                 return .none
             }
         }

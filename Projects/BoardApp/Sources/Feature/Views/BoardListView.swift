@@ -12,9 +12,8 @@ import AppCraftCoreUI
 import Shared
 
 public struct BoardListView: View {
-    private let store: StoreOf<FeatureBoard>
-    @State private var showCreateBoardView = false
-
+    @Bindable private var store: StoreOf<FeatureBoard>
+    
     public init(domain: DomainBoardInterface, userID: String?) {
         self.store = Store(initialState: FeatureBoard.State(), reducer: {
             FeatureBoard(domainBoard: domain, userID: userID ?? "")
@@ -22,13 +21,13 @@ public struct BoardListView: View {
     }
     
     public var body: some View {
-        WithViewStore(store, observe: { $0 }) { viewStore in
+        NavigationStack(path: $store.scope(state: \.path, action: \.path)) {
             VStack {
-                if viewStore.boards.isEmpty {
+                if store.boards.isEmpty {
                     Spacer()
                     
                     Button {
-                        showCreateBoardView = true
+                        store.send(.createNewBoardTapped)
                     } label: {
                         AppCraftCoreUIAsset
                             .darkGray
@@ -57,14 +56,13 @@ public struct BoardListView: View {
                                         .swiftUIImage
                                         .padding(.top, 7)
                                 }
-
                             }
                     }
                     
                     Spacer()
                 } else {
                     LazyVGrid(columns: [GridItem(spacing: 12), GridItem(spacing: 12)]) {
-                        ForEach(viewStore.boards) { board in
+                        ForEach(store.boards) { board in
                             SingleBoardView(board: board)
                         }
                     }
@@ -72,13 +70,18 @@ public struct BoardListView: View {
                 }
             }
             .onAppear {
-                viewStore.send(.onAppear)
+                store.send(.onAppear)
             }
-            .fullScreenCover(isPresented: $showCreateBoardView) {
-                BoardView(store: Store(initialState: FeatureCreateBoard.State(), reducer: {
-                    FeatureCreateBoard()
-                }))
+        } destination: { store in
+            VStack {
+                switch store.case {
+                case .createBoard(let createBoardStore):
+                    BoardView(store: createBoardStore)
+                }
             }
+            .toolbar(.hidden, for: .navigationBar)
+
         }
+        
     }
 }

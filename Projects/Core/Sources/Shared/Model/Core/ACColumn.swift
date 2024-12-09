@@ -5,7 +5,6 @@
 //
 
 import Foundation
-import Shared
 
 public struct ACColumn: ACCoreType {
     public static func == (lhs: ACColumn, rhs: ACColumn) -> Bool {

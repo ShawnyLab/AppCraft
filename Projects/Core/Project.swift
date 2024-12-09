@@ -9,38 +9,37 @@ let project = Project(
         )
     ],
     targets: [
-        Target(
+        .target(
             name: "CoreAuth",
-            platform: .iOS,
+            destinations: .iOS,
             product: .framework,
             bundleId: "com.appcraft.coreauth",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
             sources: ["Sources/CoreAuth/**"],
             dependencies: [
                 .target(name: "Shared"),
-                .package(product: "FirebaseAuth")
+                .external(name: "FirebaseAuth")
+//                .package(product: "FirebaseAuth")
             ]
         ),
-        Target(
+        .target(
             name: "CoreDatabase",
-            platform: .iOS,
+            destinations: .iOS,
             product: .framework,
             bundleId: "com.appcraft.coredatabase",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
             sources: ["Sources/CoreDatabase/**"],
             dependencies: [
                 .target(name: "Shared"),
-                .package(product: "FirebaseFirestore")
+                .external(name: "FirebaseFirestore")
+//                .package(product: "FirebaseFirestore")
             ]
         ),
-        Target(
+        .target(
             name: "AppCraftCoreUI",
-            platform: .iOS,
+            destinations: .iOS,
             product: .framework,
             bundleId: "com.appcraft.appcraftcoreui",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
             sources: ["Sources/AppCraftCoreUI/**"],
             resources: ["Sources/AppCraftCoreUI/Resources/**"],
@@ -48,12 +47,11 @@ let project = Project(
                 .target(name: "Shared"),
             ]
         ),
-        Target(
+        .target(
             name: "Shared",
-            platform: .iOS,
+            destinations: .iOS,
             product: .framework,
             bundleId: "com.appcraft.shared",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
             sources: ["Sources/Shared/**"]
         )

@@ -17,12 +17,11 @@ let project = Project(
         ),
     ],
     targets: [
-        Target(
+        .target(
             name: "FeatureAuthExample",
-            platform: .iOS,
+            destinations: .iOS,
             product: .app,
             bundleId: "com.appcraft.featureauthexample",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
             sources: ["Sources/Example/**"],
             dependencies: [
@@ -38,26 +37,24 @@ let project = Project(
                 ]
             )
         ),
-        Target(
+        .target(
             name: "FeatureAuth",
-            platform: .iOS,
+            destinations: .iOS,
             product: .framework,
             bundleId: "com.appcraft.featureauth",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
             sources: ["Sources/Feature/**"],
             dependencies: [
                 .target(name: "DomainAuthInterface"),
                 .project(target: "AppCraftCoreUI", path: "../Core"),
-                .package(product: "ComposableArchitecture"),
+//                .package(product: "ComposableArchitecture"),
             ]
         ),
-        Target(
+        .target(
             name: "DomainAuth",
-            platform: .iOS,
+            destinations: .iOS,
             product: .framework,
             bundleId: "com.appcraft.domainauth",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
             sources: ["Sources/Domain/**"],
             dependencies: [
@@ -65,12 +62,11 @@ let project = Project(
                 .target(name: "UserRepository")
             ]
         ),
-        Target(
+        .target(
             name: "DomainAuthInterface",
-            platform: .iOS,
+            destinations: .iOS,
             product: .framework,
             bundleId: "com.appcraft.domainauthinterface",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
             sources: ["Sources/DomainInterface/**"],
             dependencies: [
@@ -78,12 +74,11 @@ let project = Project(
                 .project(target: "Shared", path: "../Core"),
             ]
         ),
-        Target(
+        .target(
             name: "UserRepository",
-            platform: .iOS,
+            destinations: .iOS,
             product: .framework,
             bundleId: "com.appcraft.userrepository",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
             sources: ["Sources/Repository/**"],
             dependencies: [
@@ -91,12 +86,11 @@ let project = Project(
                 .project(target: "Shared", path: "../Core"),
             ]
         ),
-        Target(
+        .target(
             name: "MockDomainAuth",
-            platform: .iOS,
+            destinations: .iOS,
             product: .framework,
             bundleId: "com.appcraft.mockdomainauth",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
             sources: ["Sources/Mock/**"],
             dependencies: [

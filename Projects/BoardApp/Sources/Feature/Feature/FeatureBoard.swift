@@ -20,15 +20,18 @@ public struct FeatureBoard {
         self.userID = userID
     }
     
+    @ObservableState
     public struct State: Equatable, Sendable, Identifiable {
         public var id: UUID = UUID()
         public var isLoading: Bool = false
         public var error: String?
         public var boards: [Board] = []  // View를 위한 상태
         
+        public var path = StackState<Path.State>()
+        
         public init() { }
     }
-    
+
     public enum Action: Equatable {
         case onAppear
         case fetchBoards
@@ -36,6 +39,9 @@ public struct FeatureBoard {
         case deleteBoard(String)
         case deleteBoardResult(TaskResult<String>)
         case clearError
+        case createNewBoardTapped
+        
+        case path(StackActionOf<Path>)
         
         public static func == (lhs: Action, rhs: Action) -> Bool {
             switch (lhs, rhs) {
@@ -64,6 +70,10 @@ public struct FeatureBoard {
             case .onAppear:
                 return .send(.fetchBoards)
                 
+            case .createNewBoardTapped:
+                state.path.append(.createBoard(FeatureCreateBoard.State()))
+                return .none
+
             case .fetchBoards:
                 state.isLoading = true
                 state.error = nil
@@ -117,8 +127,17 @@ public struct FeatureBoard {
             case .clearError:
                 state.error = nil
                 return .none
+            case .path(_):
+                return .none
             }
         }
+        .forEach(\.path, action: \.path)
+    }
+    
+    @Reducer
+    public enum Path {
+        case createBoard(FeatureCreateBoard)
+//        case editBoard(FeatureEditBoard)
     }
 }
 

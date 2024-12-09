@@ -3,32 +3,30 @@ import ProjectDescription
 let project = Project(
     name: "CompApp",
     packages: [
-        .remote(
-            url: "https://github.com/pointfreeco/swift-composable-architecture",
-            requirement: .upToNextMajor(from: "1.8.0")
-        )
+//        .remote(
+//            url: "https://github.com/pointfreeco/swift-composable-architecture",
+//            requirement: .upToNextMajor(from: "1.8.0")
+//        )
     ],
     targets: [
-        Target(
+        .target(
             name: "FeatureComp",
-            platform: .iOS,
+            destinations: .iOS,
             product: .framework,
             bundleId: "com.appcraft.featurecomp",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
             sources: ["Sources/Feature/**"],
             dependencies: [
                 .target(name: "DomainCompInterface"),
                 .project(target: "AppCraftCoreUI", path: "../Core"),
-                .package(product: "ComposableArchitecture"),
+//                .package(product: "ComposableArchitecture"),
             ]
         ),
-        Target(
+        .target(
             name: "DomainComp",
-            platform: .iOS,
+            destinations: .iOS,
             product: .framework,
             bundleId: "com.appcraft.domaincomp",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
             sources: ["Sources/Domain/**"],
             dependencies: [
@@ -36,12 +34,11 @@ let project = Project(
                 .target(name: "CompRepository")
             ]
         ),
-        Target(
+        .target(
             name: "DomainCompInterface",
-            platform: .iOS,
+            destinations: .iOS,
             product: .framework,
             bundleId: "com.appcraft.domaincompinterface",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
             sources: ["Sources/DomainInterface/**"],
             dependencies: [
@@ -49,12 +46,11 @@ let project = Project(
                 .project(target: "Shared", path: "../Core"),
             ]
         ),
-        Target(
+        .target(
             name: "CompRepository",
-            platform: .iOS,
+            destinations: .iOS,
             product: .framework,
             bundleId: "com.appcraft.comprepository",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
             sources: ["Sources/Repository/**"],
             dependencies: [
@@ -62,24 +58,22 @@ let project = Project(
                 .project(target: "Shared", path: "../Core"),
             ]
         ),
-        Target(
+        .target(
             name: "MockDomainComp",
-            platform: .iOS,
+            destinations: .iOS,
             product: .framework,
             bundleId: "com.appcraft.mockdomaincomp",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .default,
             sources: ["Sources/Mock/**"],
             dependencies: [
                 .target(name: "DomainCompInterface")
             ]
         ),
-        Target(
+        .target(
             name: "FeatureCompExample",
-            platform: .iOS,
+            destinations: .iOS,
             product: .app,
             bundleId: "com.appcraft.featurecompexample",
-            deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
             infoPlist: .file(path: "Sources/Example/Resources/Info.plist"),
             sources: ["Sources/Example/**"],
             dependencies: [
