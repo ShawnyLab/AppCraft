@@ -21,7 +21,7 @@ public struct FeatureBoard {
     }
     
     @ObservableState
-    public struct State: Equatable, Sendable, Identifiable {
+    public struct State {
         public var id: UUID = UUID()
         public var isLoading: Bool = false
         public var error: String?
@@ -32,7 +32,7 @@ public struct FeatureBoard {
         public init() { }
     }
 
-    public enum Action: Equatable {
+    public enum Action {
         case onAppear
         case fetchBoards
         case fetchBoardsResult(TaskResult<[Board]>)
@@ -42,26 +42,6 @@ public struct FeatureBoard {
         case createNewBoardTapped
         
         case path(StackActionOf<Path>)
-        
-        public static func == (lhs: Action, rhs: Action) -> Bool {
-            switch (lhs, rhs) {
-            case (.onAppear, .onAppear),
-                (.fetchBoards, .fetchBoards),
-                (.clearError, .clearError):
-                return true
-            case let (.deleteBoard(lhsId), .deleteBoard(rhsId)):
-                return lhsId == rhsId
-            case let (.fetchBoardsResult(.success(lhsBoards)), .fetchBoardsResult(.success(rhsBoards))):
-                return lhsBoards.map { $0.id } == rhsBoards.map { $0.id }
-            case let (.deleteBoardResult(.success(lhsId)), .deleteBoardResult(.success(rhsId))):
-                return lhsId == rhsId
-            case let (.fetchBoardsResult(.failure(lhsError)), .fetchBoardsResult(.failure(rhsError))),
-                 let (.deleteBoardResult(.failure(lhsError)), .deleteBoardResult(.failure(rhsError))):
-                return lhsError.localizedDescription == rhsError.localizedDescription
-            default:
-                return false
-            }
-        }
     }
     
     public var body: some ReducerOf<Self> {
@@ -138,14 +118,5 @@ public struct FeatureBoard {
     public enum Path {
         case createBoard(FeatureCreateBoard)
 //        case editBoard(FeatureEditBoard)
-    }
-}
-
-extension FeatureBoard.State {
-    public static func == (lhs: FeatureBoard.State, rhs: FeatureBoard.State) -> Bool {
-        lhs.id == rhs.id &&
-        lhs.isLoading == rhs.isLoading &&
-        lhs.error == rhs.error &&
-        lhs.boards.map { $0.id } == rhs.boards.map { $0.id }
     }
 }
